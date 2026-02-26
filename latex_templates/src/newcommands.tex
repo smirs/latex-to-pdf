@@ -1,0 +1,249 @@
+
+\usepackage{fp}  % floating point calculations
+\usepackage{pgfcalendar} % for date calculations
+\usepackage{xfp}
+\usepackage{amsmath}
+\usepackage{xfp}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{bidi}
+\hypersetup{pdfborder={0 0 0}}
+
+\sisetup{
+  round-mode=places,
+  round-precision=2,
+  round-pad=true,
+  output-decimal-marker=.
+}
+
+% Define variables for the lease agreement: INSERT YOUR VALUES HERE
+
+%############################################## VARIABLES ##########################################################
+\newcommand{\TenantNames}{Marry L. Smith and Josef K. Smith}  % tenant's full name
+\newcommand{\TenantAddress}{123 Main St, St. Louis MO 63101}
+\newcommand{\TenantPhone}{(656) 555-1234}
+\newcommand{\TenantEmail}{tammy.pust@gmail.com}
+
+\newcommand{\Rent}{\num{1445.00}}  % monthly rent
+\newcommand{\SecurityDeposit}{\num{1445.00}}  % security deposit amount
+\newcommand{\Commencement}{2025-12-23}
+\newcommand{\LeaseStart}{2025-12-31}
+\newcommand{\LeaseEnd}{2026-12-30}
+\newcommand{\Duration}{\num{12}}  % duration of the lease in months
+\newcommand{\NumPets}{\num{2}}  % number of pets
+
+\newcommand{\PropertyAddress}{345 Pine St, St. Louis MO 63101}
+\newcommand{\State}{Missouri}  % state where the property is located
+\newcommand{\City}{St. Louis}  % city where the property is located
+\newcommand{\County}{St. Louis County}  % county where the property is located
+\newcommand{\Municipality}{St. Louis}  % municipality where the property is located
+
+
+%############################################## CONSTANTS ##########################################################
+\newcommand{\PayeeName}{Pamela Jones}  % name of the payee for rent payments
+\newcommand{\PayeeAddress}{344 Main St, Chicago IL 60601}
+\newcommand{\UnitNum}{K}
+
+\newcommand{\LandlordName}{Jacob J. White}  % landlord's full name
+\newcommand{\Company}{O'Properties STL}  % property management company name
+\newcommand{\LandlordAddress}{788 Main St, Miami FL 33101}  % landlord's address
+\newcommand{\LandlordPhone}{(626) 443-6544}  % landlord's phone number
+\newcommand{\LandlordEmail}{jacob.white@gmail.com}  % landlord's email address
+
+\newcommand{\ManagerPhone}{(687) 546-7665}
+\newcommand{\ManagerEmail}{jacob.white@gmail.com}	
+
+\newcommand{\latefee}{\num{25.00}}  % late fee amount per day
+\newcommand{\PenaltyFine}{\num{25.00}}  % fine for failure to report each maintenance issues
+\newcommand{\returnedcheckfee}{\num{35.00}}  % fee for returned checks
+\newcommand{\paymentday}{FIRST}  % day of the month when rent is due
+\newcommand{\OtherFees}{\num{300.00}}  % other fees
+
+\newcommand{\MaxTenantsAllowed}{1}  % maximum number of tenants allowed
+\newcommand{\MaxPetsAllowed}{1}  % maximum number of pets allowed
+\newcommand{\PetDeposit}{\num{200.00}}  % non-refundable pet deposit per pet
+\newcommand{\lostkeyfee}{\num{25.00}}  % fee for lost keys
+\newcommand{\maxkeyfee}{\num{100.00}}  % fee for unreturned keys
+\newcommand{\numkeyfront}{2}  % number of front door keys
+\newcommand{\numkeymailbox}{1}  % number of mailbox keys
+\newcommand{\numkeypool}{1}  % number of pool access keys
+\newcommand{\numkeyother}{0}  % number of other keys
+\newcommand{\discount}{0.00}  % discount amount for early payment
+%#################################################################################################################
+
+
+% Define new fixed commands across all documents
+%#################################################################################################################
+
+% Define DailyRent based on Rent
+\newcommand{\DailyRent}{%
+  \num{\fpeval{round(\Rent/30,2)}}%
+}
+
+\newcommand{\TotalPetDeposit}{%
+  \num{\fpeval{round(\PetDeposit * \NumPets, 2)}}%
+}
+
+\newcount\CommencementCount
+\newcount\StartDateCount
+\newcount\PreLeaseDuration
+
+\newcommand{\ComputePreLeaseDays}{%
+  \pgfcalendardatetojulian{\Commencement}{\CommencementCount}%
+  \pgfcalendardatetojulian{\LeaseStart}{\StartDateCount}%
+  \PreLeaseDuration=\StartDateCount
+  \advance\PreLeaseDuration by -\CommencementCount
+}
+
+\newcommand{\totallease}{%
+  \fpeval{round((\Rent) * \Duration,2)}%
+}
+
+\newcommand{\DueAmount}{%
+  \num{\fpeval{round(\DailyRent * \number\PreLeaseDuration, 2)}}
+}
+
+\newcommand{\TotalPaymentDayOne}{%
+  \num{
+	\fpeval{
+    round(
+      round(\DailyRent * \number\PreLeaseDuration, 2)
+      + \SecurityDeposit
+      + \Rent
+	  + \TotalPetDeposit
+	  + \OtherFees
+    , 2)
+  	}
+  }%
+}
+
+
+\newcommand{\mycheckbox}[2]{%
+  \raisebox{-2pt}{%
+    \CheckBox[
+      name=#1,
+      borderwidth=0,
+      width=10pt,
+      height=10pt
+    ]{}%
+  }~#2%
+}
+
+
+
+\newcommand{\TenantBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=7cm, height=10pt, default={#1},]{}}%
+	}
+
+
+\newcounter{FieldCounter1}
+\newcommand{\TinyBox}[1]{%
+  \stepcounter{FieldCounter}%
+  \raisebox{-2pt}{%
+    \TextField[
+      name=Field\theFieldCounter,
+      borderwidth=0,
+      width=0.5cm,
+      height=10pt,
+      default={#1}
+    ]{}%
+  }%
+}
+
+
+\newcommand{\RedlBox}[1]{%
+  \raisebox{-2pt}{%
+    \TextField[
+      name=#1,
+      backgroundcolor={0.99 0.86 0.86}, % light red background
+      borderwidth=0,
+      width=2cm,
+      height=20pt,
+      default={#1}
+    ]{}%
+  }%
+}
+
+\newcommand{\SmallBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=2cm, height=10pt, default={#1},]{}}%
+	}
+
+\newcommand{\GoodBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=3cm, height=10pt, default={#1},]{}}%
+	}
+
+\newcommand{\MidBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=4cm, height=10pt, default={#1},]{}}%
+	}
+
+\newcommand{\MidBigBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=5cm, height=10pt, default={#1},]{}}%
+	}
+
+\newcommand{\BigMidBox}[1]{
+\raisebox{-2pt}{
+\TextField[name=#1, borderwidth=0, width=6cm, height=10pt, default={#1},]{}}%
+}
+
+\newcommand{\MagicBox}[2]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=7cm, height=10pt, default={#2},]{}}%
+	}
+
+\newcommand{\DateBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=2cm, height=10pt, default={#1},]{}}%
+	}
+
+
+\newcounter{FieldCounter}
+\newcommand{\BigBox}[1]{%
+  \stepcounter{FieldCounter}%
+  \raisebox{-2pt}{%
+    \TextField[
+      name=Field\theFieldCounter,
+      borderwidth=0,
+      width=7cm,
+      height=10pt,
+      default={#1}
+    ]{}%
+  }%
+}
+
+
+\newcommand{\HugeBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=15cm, height=10pt, default={#1},]{}}%
+	}
+
+\newcommand{\itemsign}[3]{
+	\TextField[name=#1,width=4cm]{Full Name:} \hfill
+	\TextField[name=#2,width=4cm]{Signature:} \hfill
+	\TextField[name=#3,width=2cm]{Date:}
+}
+
+\newcommand{\itemrow}[3]{
+	\mycheckbox{#1}{#2}\hfill
+	\TextField[name=#3, width=7cm]{Note:} \\[0.2cm]
+}
+
+\newcommand{\tenantinfo}[2]{
+	\begin{tabular}{ll}
+		Lessee Name(s): & \TenantBox{\TenantNames} \\
+		Property Address: & \TenantBox{\PropertyAddress}
+	\end{tabular}
+}
+
+\newcommand{\noticeinfo}[2]{%
+  \begin{tabular}{@{}l l l@{}}
+    Tenant(s): 			    & \BigMidBox{\TenantNames} 		  & \mycheckbox{info}{Informational / Administrative Notices} \\
+    Property Address: 	& \BigMidBox{\PropertyAddress} 	& \mycheckbox{compliance}{Compliance / Cure Notices} \\
+    Property Manager: 	& \BigMidBox{\LandlordName}   	& \mycheckbox{enforcement}{Enforcement / Legal Notices}\\
+  \end{tabular}%
+}
