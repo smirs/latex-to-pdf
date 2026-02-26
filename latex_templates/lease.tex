@@ -18,16 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-% Custom footer for initials (all pages)
-\fancyfoot[L]{%
-	\begin{minipage}[t]{0.55\textwidth}
-		Landlord Initials: \TinyBox{lanin1}
-	\end{minipage}%
-	\hfill%
-	\begin{minipage}[t]{0.45\textwidth}
-		Tenant(s) Initials: \TinyBox{tenin1} /\TinyBox{tenin2}
-	\end{minipage}%
-}
+
 
 \setlength{\footskip}{40pt} % space between text and footer line
 
@@ -49,7 +40,18 @@
 
 	\fancyfoot[R]{Page \thepage/\pageref{LastPage}}
 	\linenumbers
-	
+
+	% Custom footer for initials (all pages)
+	\fancyfoot[L]{%
+		\begin{minipage}[t]{0.55\textwidth}
+			Landlord Initials: \TinyBox{lanin1}
+		\end{minipage}%
+		\hfill%
+		\begin{minipage}[t]{0.45\textwidth}
+			Tenant(s) Initials: \TinyBox{tenin1} /\TinyBox{tenin2}
+		\end{minipage}%
+	}
+
 	% ---------------- DOCUMENT TITLE ----------------
 	\vspace{.1cm}
 	\begin{center}

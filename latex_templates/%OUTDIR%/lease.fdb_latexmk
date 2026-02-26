@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772141926.21969 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772141926.68853 0
-  "%OUTDIR%/lease.aux" 1772141926.62328 926 524d92a8cb408ee7d85a4396c93bc8e2 "pdflatex"
-  "%OUTDIR%/lease.out" 1772141926.62328 487 4078adf836bd51a76db66fd5aaf6b8d7 "pdflatex"
+["pdflatex"] 1772142148.06686 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772142148.56806 0
+  "%OUTDIR%/lease.aux" 1772142148.5054 1010 4d7bdd8d37611b5906257eb99018de7f "pdflatex"
+  "%OUTDIR%/lease.out" 1772142148.5054 487 4078adf836bd51a76db66fd5aaf6b8d7 "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772141924.57832 1774 713f6cf1f67feb69e1b7c045d3ab9693 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772142146.89557 1785 fac523b89e4e09071d5ffe2808eb6f3b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -83,7 +83,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
   "header_oproperties.tex" 1772137001.07306 1367 ae7ea2c072db471997621ac91e456aeb ""
-  "lease.tex" 1772141924.57832 1774 713f6cf1f67feb69e1b7c045d3ab9693 ""
+  "lease.tex" 1772142146.89557 1785 fac523b89e4e09071d5ffe2808eb6f3b ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
   "newcommands.tex" 1772139635.67618 6999 da08cb6ccebabfc76e155fffdeb9aafa ""
   (generated)
