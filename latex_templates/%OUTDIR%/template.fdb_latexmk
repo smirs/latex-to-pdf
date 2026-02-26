@@ -1,10 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1772133081.78952 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772133082.1423 0
-  "%OUTDIR%/template.aux" 1772133082.09769 189 e1a2a2ca2b72683174b41922fadd25a8 "pdflatex"
-  "%OUTDIR%/template.out" 1772133082.08673 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["pdflatex"] 1772133214.62196 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772133214.94406 2
+  "%OUTDIR%/template.aux" 1772133214.88656 189 e1a2a2ca2b72683174b41922fadd25a8 "pdflatex"
+  "%OUTDIR%/template.out" 1772133214.87556 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772133080.83271 227 6e4d20c1cb2908637be41d4d7781bd45 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772133213.08059 333 da53766f794ab82d10b28efadb2a21ef ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -42,7 +47,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "newcommands.tex" 1772132669.71447 6941 972a2753476212921f08a58d6746c087 ""
-  "template.tex" 1772133080.83271 227 6e4d20c1cb2908637be41d4d7781bd45 ""
+  "template.tex" 1772133213.08059 333 da53766f794ab82d10b28efadb2a21ef ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"
