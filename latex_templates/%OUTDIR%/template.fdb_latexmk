@@ -1,0 +1,18 @@
+# Fdb version 4
+["pdflatex"] 1772132720.94645 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772132721.11213 2
+  "%OUTDIR%/comnewcommands.tex" 0 -1 0 ""
+  "%OUTDIR%/template.aux" 1772132712.94563 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772132719.66465 170 198ace7248b2ec7a13a67c9936417e33 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
+  "comnewcommands.tex" 0 -1 0 ""
+  "template.tex" 1772132719.66465 170 198ace7248b2ec7a13a67c9936417e33 ""
+  (generated)
+  "%OUTDIR%/template.aux"
+  "%OUTDIR%/template.log"
+  "template.pdf"
+  (rewritten before read)
