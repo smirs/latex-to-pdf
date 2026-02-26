@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex
-(/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex
+**"/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template copy.tex"
+(/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template copy.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -236,8 +236,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-(%OUTDIR%/template.aux)
-\openout1 = `template.aux'.
+(%OUTDIR%/template copy.aux)
+\openout1 = `"template copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -312,9 +312,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 16.
- (%OUTDIR%/template.out) (%OUTDIR%/template.out)
+ (%OUTDIR%/template copy.out) (%OUTDIR%/template copy.out)
 \@outlinefile=\write3
-\openout3 = `template.out'.
+\openout3 = `"template copy.out"'.
 
  (./header_oproperties.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -379,24 +379,24 @@ Package pdftex.def Info: logo.png  used on input line 41.
 
  <./logo.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(%OUTDIR%/template.aux)
+(%OUTDIR%/template copy.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `template.out' has not changed.
+Package rerunfilecheck Info: File `"template copy".out' has not changed.
 (rerunfilecheck)             Checksum: F92BC2537E772CE079BE5BEE78FF835F;73.
  ) 
 Here is how much of TeX's memory you used:
- 9955 strings out of 475580
- 154754 string characters out of 5782560
+ 9957 strings out of 475580
+ 154913 string characters out of 5782560
  1942975 words of memory out of 5000000
- 31999 multiletter control sequences out of 15000+600000
+ 32001 multiletter control sequences out of 15000+600000
  562020 words of font info for 49 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 70i,19n,79p,384b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,19n,79p,391b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on %OUTDIR%/template.pdf (1 page, 112791 bytes).
+Output written on "%OUTDIR%/template copy.pdf" (1 page, 112791 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

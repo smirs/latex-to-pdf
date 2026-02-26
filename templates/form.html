@@ -136,12 +136,20 @@ h1, h2, h3, h4, h5 {
     {# ------------------- #}
         <h2>Enter Tenant Info</h2>
 
-        <form action="/generate" method="post">
+        <form action="/generate_commencement" method="post">
             Tenant Name(s): <input type="text" name="name" required><br>
             Property Address: <input type="text" name="address" required><br>
             Move-in Date: <input type="date" name="moveindate" required><br>
 
-            <button type="submit">Build PDF for me</button>
+            <button type="submit">Build Commencement Addendum</button>
+        </form>
+
+        <form action="/generate_lease" method="post">
+            Tenant Name(s): <input type="text" name="name" required><br>
+            Property Address: <input type="text" name="address" required><br>
+            Move-in Date: <input type="date" name="moveindate" required><br>
+
+            <button type="submit">Build Residential Lease</button>
         </form>
     {# ------------------ #}
 

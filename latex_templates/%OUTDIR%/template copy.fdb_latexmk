@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772139636.3195 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772139636.77191 0
-  "%OUTDIR%/template.aux" 1772139636.70916 794 734a2a8614cc936a0ab33b6684b4b003 "pdflatex"
-  "%OUTDIR%/template.out" 1772139636.71016 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
+["pdflatex"] 1772140236.20951 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template copy.tex" "template copy.pdf" "template copy" 1772140236.70162 0
+  "%OUTDIR%/template copy.aux" 1772140236.62998 794 734a2a8614cc936a0ab33b6684b4b003 "pdflatex"
+  "%OUTDIR%/template copy.out" 1772140236.63098 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772136893.74482 1609 a68007aae3c480585c33234ca1482d2c ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template copy.tex" 1772140234.14128 1609 a68007aae3c480585c33234ca1482d2c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -84,10 +84,10 @@
   "header_oproperties.tex" 1772137001.07306 1367 ae7ea2c072db471997621ac91e456aeb ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
   "newcommands.tex" 1772139635.67618 6999 da08cb6ccebabfc76e155fffdeb9aafa ""
-  "template.tex" 1772136893.74482 1609 a68007aae3c480585c33234ca1482d2c ""
+  "template copy.tex" 1772140234.14128 1609 a68007aae3c480585c33234ca1482d2c ""
   (generated)
-  "%OUTDIR%/template.aux"
-  "%OUTDIR%/template.log"
-  "%OUTDIR%/template.out"
-  "template.pdf"
+  "%OUTDIR%/template copy.aux"
+  "%OUTDIR%/template copy.log"
+  "%OUTDIR%/template copy.out"
+  "template copy.pdf"
   (rewritten before read)
