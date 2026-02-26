@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772134065.50695 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772134065.8461 2
-  "%OUTDIR%/template.aux" 1772134065.80954 189 e1a2a2ca2b72683174b41922fadd25a8 "pdflatex"
-  "%OUTDIR%/template.out" 1772134065.79754 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["pdflatex"] 1772134191.69481 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772134192.19197 2
+  "%OUTDIR%/template.aux" 1772134192.08043 189 e1a2a2ca2b72683174b41922fadd25a8 "pdflatex"
+  "%OUTDIR%/template.out" 1772134192.05643 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772134063.93176 413 56e1a42bc46157a2510ed9121ef95fd4 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772134190.53082 413 56e1a42bc46157a2510ed9121ef95fd4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -50,8 +50,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
-  "newcommands.tex" 1772134064.07357 6941 972a2753476212921f08a58d6746c087 ""
-  "template.tex" 1772134063.93176 413 56e1a42bc46157a2510ed9121ef95fd4 ""
+  "newcommands.tex" 1772134103.66947 6941 972a2753476212921f08a58d6746c087 ""
+  "template.tex" 1772134190.53082 413 56e1a42bc46157a2510ed9121ef95fd4 ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"
