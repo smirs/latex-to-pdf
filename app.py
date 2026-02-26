@@ -4,7 +4,9 @@ from flask import Flask, render_template, request, send_file
 
 app = Flask(__name__, static_url_path='/')
 
-LATEX_TEMPLATE_PATH = "latex_templates/template.tex"
+# Folder where all LaTeX templates and dependencies live
+TEX_DIR = "latex_templates"
+MAIN_TEX_FILE = "template.tex"  # main LaTeX file inside TEX_DIR
 OUTPUT_FOLDER = "output"
 
 @app.route("/")
@@ -16,27 +18,40 @@ def generate():
     name = request.form["name"]
     score = request.form["score"]
 
-    # Read LaTeX template
-    with open(LATEX_TEMPLATE_PATH, "r") as file:
+    # Read the main LaTeX template
+    main_tex_path = os.path.join(TEX_DIR, MAIN_TEX_FILE)
+    with open(main_tex_path, "r") as file:
         latex_content = file.read()
 
     # Replace placeholders
     latex_content = latex_content.replace("{{NAME}}", name)
     latex_content = latex_content.replace("{{SCORE}}", score)
 
-    # Create output tex file
-    tex_path = os.path.join(OUTPUT_FOLDER, "output.tex")
+    # Create output tex file inside TEX_DIR
+    tex_filename = "output.tex"
+    tex_path = os.path.join(TEX_DIR, tex_filename)
     with open(tex_path, "w") as file:
         file.write(latex_content)
 
-    # Compile LaTeX to PDF
-    subprocess.run([
-        "pdflatex",
-        "-output-directory", OUTPUT_FOLDER,
-        tex_path
-    ])
-
+    # Ensure output folder exists
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     pdf_path = os.path.join(OUTPUT_FOLDER, "output.pdf")
+
+    # Compile LaTeX to PDF **from TEX_DIR** so \input works
+    result = subprocess.run(
+        [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-output-directory", os.path.abspath(OUTPUT_FOLDER),
+            tex_filename
+        ],
+        cwd=os.path.abspath(TEX_DIR),
+        capture_output=True,
+        text=True
+    )
+
+    if result.returncode != 0:
+        return f"<h3>LaTeX compilation failed:</h3><pre>{result.stdout}\n{result.stderr}</pre>"
 
     return send_file(pdf_path, as_attachment=True)
 
