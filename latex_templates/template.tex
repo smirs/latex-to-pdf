@@ -13,14 +13,16 @@
 \usepackage{fancyhdr}
 \usepackage{fp}  % floating point calculations
 
-% New commands defined
-
-\include{./src/newcommands.tex}
-\include{./src/header_oproperties.tex}
 
 \setlength{\parindent}{0pt}  % remove all paragraph indentation
 
+\include{/latex_templates/src/newcommands.tex}
+\include{/latex_templates/src/header_oproperties.tex}
+
 \begin{document}
+
+
+
 	% ---------------- DOCUMENT TITLE ----------------
 
 	\begin{center}
@@ -43,6 +45,6 @@ From this date forward:\\\\
 	By signing below, both parties confirm their agreement to this addendum.
 
 
-	\input{./src/acknowledge.tex}
+	\input{/latex_templates/src/acknowledge.tex}
 
 \end{document}
