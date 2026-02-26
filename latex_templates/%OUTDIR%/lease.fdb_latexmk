@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772140649.14618 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772140649.66195 0
-  "%OUTDIR%/lease.aux" 1772140649.59301 794 734a2a8614cc936a0ab33b6684b4b003 "pdflatex"
-  "%OUTDIR%/lease.out" 1772140649.59401 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
+["pdflatex"] 1772141237.25354 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772141237.89906 2
+  "%OUTDIR%/lease.aux" 1772141237.76599 3866 678348e3a96e40b111662ff46f0b1f17 "pdflatex"
+  "%OUTDIR%/lease.out" 1772141237.76676 3223 f88dbb362678c170b05d12071ae3875c "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772140647.541 1605 92e74767e8aab1c4ac3e55f6eb3ecd78 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772141235.33148 19969 7a0d3b7dd6ee627b76385f02ac3a33ce ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -80,9 +80,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
-  "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
   "header_oproperties.tex" 1772137001.07306 1367 ae7ea2c072db471997621ac91e456aeb ""
-  "lease.tex" 1772140647.541 1605 92e74767e8aab1c4ac3e55f6eb3ecd78 ""
+  "lease.tex" 1772141235.33148 19969 7a0d3b7dd6ee627b76385f02ac3a33ce ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
   "newcommands.tex" 1772139635.67618 6999 da08cb6ccebabfc76e155fffdeb9aafa ""
   (generated)
