@@ -92,12 +92,6 @@ OUTPUT %OUTDIR%/template.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT %OUTDIR%/template.out
-INPUT %OUTDIR%/template.out
-INPUT %OUTDIR%/template.out
-INPUT %OUTDIR%/template.out
-INPUT %OUTDIR%/template.out
-INPUT %OUTDIR%/template.out
 OUTPUT %OUTDIR%/template.out
 OUTPUT %OUTDIR%/template.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
