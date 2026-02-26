@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,28 +23,54 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-)
+) (./newcommands.tex
+\CommencementCount=\count195
+\StartDateCount=\count196
+\PreLeaseDuration=\count197
+\c@FieldCounter1=\count198
+\c@FieldCounter=\count199
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
+\l__pdf_internal_box=\box51
+) (%OUTDIR%/template.aux)
+\openout1 = `template.aux'.
 
-! LaTeX Error: File `comnewcommands.tex' not found.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+ [1
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:3: Emergency stop.
-<read *> 
-         
-l.3 \input{comnewcommands.tex}
-                               % <-- include your commands^^M
-*** (cannot \read from terminal in nonstop modes)
-
- 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (%OUTDIR%/template.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
 Here is how much of TeX's memory you used:
- 229 strings out of 475580
- 3032 string characters out of 5782560
+ 513 strings out of 475580
+ 9434 string characters out of 5782560
  1922975 words of memory out of 5000000
- 22484 multiletter control sequences out of 15000+600000
+ 22755 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 35i,0n,38p,191b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:3:  ==> Fatal error occurred, no output PDF file produced!
+ 35i,5n,50p,247b,109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on %OUTDIR%/template.pdf (1 page, 17768 bytes).
+PDF statistics:
+ 13 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

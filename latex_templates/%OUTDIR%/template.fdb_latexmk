@@ -1,16 +1,18 @@
 # Fdb version 4
-["pdflatex"] 1772132720.94645 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772132721.11213 2
-  "%OUTDIR%/comnewcommands.tex" 0 -1 0 ""
-  "%OUTDIR%/template.aux" 1772132712.94563 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+["pdflatex"] 1772132777.17183 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772132777.34234 0
+  "%OUTDIR%/template.aux" 1772132777.32064 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772132719.66465 170 198ace7248b2ec7a13a67c9936417e33 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772132776.55765 167 d968fe7eb661a1e9ff9ae63a1556761f ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
-  "comnewcommands.tex" 0 -1 0 ""
-  "template.tex" 1772132719.66465 170 198ace7248b2ec7a13a67c9936417e33 ""
+  "newcommands.tex" 1772132669.71447 6941 972a2753476212921f08a58d6746c087 ""
+  "template.tex" 1772132776.55765 167 d968fe7eb661a1e9ff9ae63a1556761f ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"
