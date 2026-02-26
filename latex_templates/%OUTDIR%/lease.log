@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -327,21 +327,40 @@ Package hyperref Info: Link coloring OFF on input line 46.
 \@outlinefile=\write3
 \openout3 = `lease.out'.
 
- (./header_oproperties.tex)
+ (./header_oproperties.tex) (./acknowledge.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 81.
+(Font)              <7> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 81.
+(Font)              <5> on input line 16.
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 16--17
+[][] 
+ []
+
+)
+Overfull \hbox (33.0pt too wide) in paragraph at lines 25--70
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--70
+
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 84.
+(Font)              <8> on input line 72.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 84.
-<logo.png, id=23, 401.5pt x 401.5pt>
+(Font)              <6> on input line 72.
+<logo.png, id=28, 401.5pt x 401.5pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 84.
+Package pdftex.def Info: logo.png  used on input line 72.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./logo.png>] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -351,21 +370,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `lease.out' has not changed.
-(rerunfilecheck)             Checksum: 3D05973770C7B7129812B1629C740092;346.
+(rerunfilecheck)             Checksum: 4078ADF836BD51A76DB66FD5AAF6B8D7;487.
  ) 
 Here is how much of TeX's memory you used:
- 10237 strings out of 475580
- 158388 string characters out of 5782560
- 1933975 words of memory out of 5000000
- 32280 multiletter control sequences out of 15000+600000
+ 10245 strings out of 475580
+ 158521 string characters out of 5782560
+ 1937975 words of memory out of 5000000
+ 32284 multiletter control sequences out of 15000+600000
  562020 words of font info for 49 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 70i,19n,79p,296b,505s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,19n,79p,315b,515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on %OUTDIR%/lease.pdf (1 page, 108661 bytes).
+Output written on %OUTDIR%/lease.pdf (1 page, 110892 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
+ 30 words of extra memory for PDF output out of 10000 (max. 10000000)
 
