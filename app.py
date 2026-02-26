@@ -2,7 +2,7 @@ import os
 import subprocess
 from flask import Flask, render_template, request, send_file
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/')
 
 LATEX_TEMPLATE_PATH = "latex_templates/template.tex"
 OUTPUT_FOLDER = "output"
