@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -135,12 +135,24 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen158
 \titlewidthlast=\dimen159
 \titlewidthfirst=\dimen160
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-01-25 v3.3.10 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count273
+\l__siunitx_number_exponent_fixed_int=\count274
+\l__siunitx_number_min_decimal_int=\count275
+\l__siunitx_number_min_integer_int=\count276
+\l__siunitx_number_round_precision_int=\count277
+\l__siunitx_number_lower_threshold_int=\count278
+\l__siunitx_number_upper_threshold_int=\count279
+\l__siunitx_number_group_first_int=\count280
+\l__siunitx_number_group_size_int=\count281
+\l__siunitx_number_group_minimum_int=\count282
+\l__siunitx_angle_tmp_dim=\dimen161
+\l__siunitx_angle_marker_box=\box53
+\l__siunitx_angle_unit_box=\box54
+\l__siunitx_compound_count_int=\count283
+ (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -149,7 +161,50 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen162
+))
+\l__siunitx_table_tmp_box=\box55
+\l__siunitx_table_tmp_dim=\dimen163
+\l__siunitx_table_column_width_dim=\dimen164
+\l__siunitx_table_integer_box=\box56
+\l__siunitx_table_decimal_box=\box57
+\l__siunitx_table_uncert_box=\box58
+\l__siunitx_table_before_box=\box59
+\l__siunitx_table_after_box=\box60
+\l__siunitx_table_before_dim=\dimen165
+\l__siunitx_table_carry_dim=\dimen166
+\l__siunitx_unit_tmp_int=\count284
+\l__siunitx_unit_position_int=\count285
+\l__siunitx_unit_total_int=\count286
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box61
+\extrarowheight=\dimen168
+\NC@list=\toks22
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box62
+)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen169
+\enit@toks=\toks23
+\enit@inbox=\box63
+\enit@count@id=\count287
+\enitdp@description=\count288
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
@@ -160,11 +215,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count273
+\c@section@level=\count289
 )
-\@linkdim=\dimen161
-\Hy@linkcounter=\count274
-\Hy@pagecounter=\count275
+\@linkdim=\dimen170
+\Hy@linkcounter=\count290
+\Hy@pagecounter=\count291
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -172,7 +227,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count276
+\Hy@SavedSpaceFactor=\count292
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -185,21 +240,21 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count277
+\c@Hy@tempcnt=\count293
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen162
+\XeTeXLinkMargin=\dimen171
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count278
-\Field@Width=\dimen163
-\Fld@charsize=\dimen164
+\Fld@menulength=\count294
+\Field@Width=\dimen172
+\Fld@charsize=\dimen173
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -211,9 +266,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count279
-\c@Item=\count280
-\c@Hfootnote=\count281
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -222,8 +277,8 @@ File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count282
-\c@bookmark@seq@number=\count283
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -231,17 +286,19 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip61
+\Hy@SectionHShift=\skip64
 ) (./newcommands.tex
-\CommencementCount=\count284
-\StartDateCount=\count285
-\PreLeaseDuration=\count286
-\c@FieldCounter1=\count287
-\c@FieldCounter=\count288
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+\CommencementCount=\count300
+\StartDateCount=\count301
+\PreLeaseDuration=\count302
+\c@FieldCounter1=\count303
+\c@FieldCounter=\count304
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 39.
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count305
+\l__pdf_internal_box=\box64
 )
 
 LaTeX Warning: Unused global option(s):
@@ -250,24 +307,24 @@ LaTeX Warning: Unused global option(s):
 (%OUTDIR%/lease.aux)
 \openout1 = `lease.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -305,550 +362,87 @@ LaTeX Font Info:    ... okay on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen165
-\scratchbox=\box54
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen166
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count306
+\scratchdimen=\dimen174
+\scratchbox=\box65
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen175
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-Package hyperref Info: Link coloring OFF on input line 37.
+)) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 39.
+Package hyperref Info: Link coloring OFF on input line 39.
+ (%OUTDIR%/lease.out) (%OUTDIR%/lease.out)
 \@outlinefile=\write3
 \openout3 = `lease.out'.
 
  (./header_oproperties.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Rent ->\num 
-             {1445.00}
-l.67 ... to pay a total of \DateBox{\$\totallease}
-                                                   USD to Landlord for renta...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Duration ->\num 
-                 {12}
-l.67 ... to pay a total of \DateBox{\$\totallease}
-                                                   USD to Landlord for renta...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Rent ->\num 
-             {1445.00}
-l.67 ... to pay a total of \DateBox{\$\totallease}
-                                                   USD to Landlord for renta...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Duration ->\num 
-                 {12}
-l.67 ... to pay a total of \DateBox{\$\totallease}
-                                                   USD to Landlord for renta...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Duration ->\num 
-                 {12}
-l.67 ...d for rental period of \TinyBox{\Duration}
-                                                   months beginning \DateBox...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Rent ->\num 
-             {1445.00}
-l.67 ... a monthly rental fee of \DateBox{\$\Rent}
-                                                   in advance on the \DateBo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:67: Undefined control sequence.
-\Rent ->\num 
-             {1445.00}
-l.67 ... a monthly rental fee of \DateBox{\$\Rent}
-                                                   in advance on the \DateBo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:70: Undefined control sequence.
-\latefee ->\num 
-                {25.00}
-l.70 ...ay additional rent of \DateBox{\$\latefee}
-                                                   per day (each month up th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:70: Undefined control sequence.
-\latefee ->\num 
-                {25.00}
-l.70 ...ay additional rent of \DateBox{\$\latefee}
-                                                   per day (each month up th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:73: Undefined control sequence.
-\SecurityDeposit ->\num 
-                        {1445.00}
-l.73 ...ty deposit of \DateBox{\$\SecurityDeposit}
-                                                   payable upon execution of...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:73: Undefined control sequence.
-\SecurityDeposit ->\num 
-                        {1445.00}
-l.73 ...ty deposit of \DateBox{\$\SecurityDeposit}
-                                                   payable upon execution of...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (11.09259pt too wide) in paragraph at lines 73--74
+Overfull \hbox (11.09259pt too wide) in paragraph at lines 75--76
 \OT1/cmr/m/n/10 The se-cu-rity de-posit of  [] payable upon ex-e-cu-tion of this lease, shall be held by  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 74.
+(Font)              <7> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 74.
+(Font)              <5> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
-<logo.png, id=24, 401.5pt x 401.5pt>
+(Font)              <6> on input line 76.
+<logo.png, id=108, 401.5pt x 401.5pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 74.
+Package pdftex.def Info: logo.png  used on input line 76.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 74.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./logo.png>]
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:78: Undefined control sequence.
-\returnedcheckfee ->\num 
-                         {35.00}
-l.78 ...a change of \SmallBox{\$\returnedcheckfee}
-                                                   as additional rent, for e...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:78: Undefined control sequence.
-\returnedcheckfee ->\num 
-                         {35.00}
-l.78 ...a change of \SmallBox{\$\returnedcheckfee}
-                                                   as additional rent, for e...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 94.
+Package pdftex.def Info: logo.png  used on input line 96.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 94.
-
-[2]
-
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 96.
-
-
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 99.
-
-
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 99.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:108: Missing number, treated as zero.
-<to be read again> 
-                   \c@* 
-l.108 	\begin{enumerate}[label=\roman*
-                                      )]
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:109: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 		\item P
-               ay all utilities when due including, if applicable, electric,...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:109: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 		\item P
-               ay all utilities when due including, if applicable, electric,...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:109: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 		\item P
-               ay all utilities when due including, if applicable, electric,...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:110: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 		\item O
-               btain personal liability insurance and, if desired, personal ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:110: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 		\item O
-               btain personal liability insurance and, if desired, personal ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:110: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 		\item O
-               btain personal liability insurance and, if desired, personal ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:111: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 		\item I
-               nspect smoke alarms and carbon monoxide detectors, bi-annuall...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:111: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 		\item I
-               nspect smoke alarms and carbon monoxide detectors, bi-annuall...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:111: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 		\item I
-               nspect smoke alarms and carbon monoxide detectors, bi-annuall...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:112: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 		\item C
-               hange furnace filter regularly (at least every three months) ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:112: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 		\item C
-               hange furnace filter regularly (at least every three months) ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:112: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 		\item C
-               hange furnace filter regularly (at least every three months) ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:113: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 		\item K
-               eep air conditioner compressor clean and free of debris, leav...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:113: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 		\item K
-               eep air conditioner compressor clean and free of debris, leav...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:113: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 		\item K
-               eep air conditioner compressor clean and free of debris, leav...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:114: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 		\item K
-               eep garbage, trash, waste and debris in proper containers and...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:114: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 		\item K
-               eep garbage, trash, waste and debris in proper containers and...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:114: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 		\item K
-               eep garbage, trash, waste and debris in proper containers and...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:115: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 		\item C
-               omply fully with subdivision/condominium rules and regulation...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:115: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 		\item C
-               omply fully with subdivision/condominium rules and regulation...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:115: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 		\item C
-               omply fully with subdivision/condominium rules and regulation...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:120: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 			\item K
-                eep sidewalks and driveways free from snow, ice and anything...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ [2]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 120.
+Package pdftex.def Info: logo.png  used on input line 112.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 120.
-
-[3]
+ [3]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 141.
+Package pdftex.def Info: logo.png  used on input line 140.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 141.
-
-[4]
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:147: Undefined control sequence.
-\PenaltyFine ->\num 
-                    {25.00}
-l.147 ...PENALTY FEE" OF \SmallBox{\$\PenaltyFine}
-                                                   PER ITEM/EVENT IN ADDITIO...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:147: Undefined control sequence.
-\PenaltyFine ->\num 
-                    {25.00}
-l.147 ...PENALTY FEE" OF \SmallBox{\$\PenaltyFine}
-                                                   PER ITEM/EVENT IN ADDITIO...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+ [4]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 162.
+Package pdftex.def Info: logo.png  used on input line 159.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 162.
-
-[5]
+ [5]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 171.
+Package pdftex.def Info: logo.png  used on input line 173.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 171.
-
-[6] (./acknowledge.tex
+ [6] (./acknowledge.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -859,22 +453,19 @@ Overfull \hbox (33.0pt too wide) in paragraph at lines 16--17
  []
 
 )
-Overfull \hbox (33.0pt too wide) in paragraph at lines 25--173
+Overfull \hbox (33.0pt too wide) in paragraph at lines 25--175
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--173
+Underfull \hbox (badness 10000) in paragraph at lines 25--175
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 175.
+Package pdftex.def Info: logo.png  used on input line 177.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 175.
-
 [7] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (%OUTDIR%/lease.aux)
@@ -882,38 +473,22 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `lease.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lease.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0C0161913B3F6FEF961A6369D73E663A;3029.
-
-Package lastpage Warning: Rerun to get the references right on input line 175.
-
+Package rerunfilecheck Info: File `lease.out' has not changed.
+(rerunfilecheck)             Checksum: 0C0161913B3F6FEF961A6369D73E663A;3029.
  ) 
 Here is how much of TeX's memory you used:
- 10292 strings out of 475580
- 158879 string characters out of 5782560
+ 14486 strings out of 475580
+ 283950 string characters out of 5782560
  1950975 words of memory out of 5000000
- 32283 multiletter control sequences out of 15000+600000
+ 36447 multiletter control sequences out of 15000+600000
  562020 words of font info for 49 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 70i,19n,79p,1735b,856s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,19n,80p,1743b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on %OUTDIR%/lease.pdf (7 pages, 144304 bytes).
+Output written on %OUTDIR%/lease.pdf (7 pages, 144914 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
+ 278 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
  57 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
