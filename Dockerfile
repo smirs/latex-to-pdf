@@ -5,8 +5,9 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y \
     texlive-latex-base \
     texlive-latex-extra \
-    texlive-fonts-extra \
+    texlive-science \
     texlive-fonts-recommended \
+    texlive-fonts-extra \
     texlive-xetex \
     && rm -rf /var/lib/apt/lists/*
 
