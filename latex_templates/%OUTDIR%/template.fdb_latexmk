@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772135571.75937 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772135572.17635 0
-  "%OUTDIR%/template.aux" 1772135572.12425 683 cdef1d3775c493c7c1c64ae0e66d2b70 "pdflatex"
-  "%OUTDIR%/template.out" 1772135572.12425 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
+["pdflatex"] 1772135724.002 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772135724.39947 0
+  "%OUTDIR%/template.aux" 1772135724.35083 683 a848202c59cf525e4615eeb08fe01d0a "pdflatex"
+  "%OUTDIR%/template.out" 1772135724.35183 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772135571.06526 1404 0ee435783b86edff9246db0bfbc74dca ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772135722.96312 1465 4d4a11aed5e583a152f0390043bdc6aa ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -18,6 +18,7 @@
   "/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty" 1576625223 8371 9d55b8bd010bc717624922fb3477d92e ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
   "/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty" 1575499628 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty" 1576625065 31769 002a487f55041f8e805cfbf6385ffd97 ""
   "/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty" 1576878844 5412 d5a2436094cd7be85769db90f29250a6 ""
@@ -32,6 +33,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1705352648 2462 6bc53756156dbd71c1ad550d30a3b93f ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
@@ -54,8 +56,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
-  "newcommands.tex" 1772134816.60058 6941 972a2753476212921f08a58d6746c087 ""
-  "template.tex" 1772135571.06526 1404 0ee435783b86edff9246db0bfbc74dca ""
+  "newcommands.tex" 1772135574.30721 6941 972a2753476212921f08a58d6746c087 ""
+  "template.tex" 1772135722.96312 1465 4d4a11aed5e583a152f0390043bdc6aa ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"
