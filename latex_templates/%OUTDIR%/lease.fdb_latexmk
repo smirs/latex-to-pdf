@@ -1,10 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1772141507.05779 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772141507.55445 0
-  "%OUTDIR%/lease.aux" 1772141507.49577 424 4fbf8ca4052124c646d68c5dd7e8f6fd "pdflatex"
-  "%OUTDIR%/lease.out" 1772141507.49677 154 879a5e14f846382a54ee0684f8501063 "pdflatex"
+["pdflatex"] 1772141563.53087 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772141564.19702 2
+  "%OUTDIR%/lease.aux" 1772141564.06174 3866 11e87ed23bb609602849bd9b898dee11 "pdflatex"
+  "%OUTDIR%/lease.out" 1772141564.06174 3223 f88dbb362678c170b05d12071ae3875c "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772141506.01479 1593 f173cd6c44cf551d6c9ecda4835160d8 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772141561.62639 19991 9cbbd93951398d42a5db2a7bd34b0439 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -16,6 +17,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm" 1136768653 1296 d77f431d10d47c8ea2cc18cf45346274 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -80,7 +82,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "header_oproperties.tex" 1772137001.07306 1367 ae7ea2c072db471997621ac91e456aeb ""
-  "lease.tex" 1772141506.01479 1593 f173cd6c44cf551d6c9ecda4835160d8 ""
+  "lease.tex" 1772141561.62639 19991 9cbbd93951398d42a5db2a7bd34b0439 ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
   "newcommands.tex" 1772139635.67618 6999 da08cb6ccebabfc76e155fffdeb9aafa ""
   (generated)
