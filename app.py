@@ -17,7 +17,7 @@ def index():
 def generate():
     name = request.form["name"]
     address = request.form["address"]
-
+    moveindate = request.form["moveindate"]
     # Read the main LaTeX template
     main_tex_path = os.path.join(TEX_DIR, MAIN_TEX_FILE)
     with open(main_tex_path, "r") as file:
@@ -26,6 +26,8 @@ def generate():
     # Replace placeholders
     latex_content = latex_content.replace("{{NAME}}", name)
     latex_content = latex_content.replace("{{ADDRESS}}", address)
+    latex_content = latex_content.replace("{{MOVEINDATE}}", moveindate)
+
 
     # Create output tex file inside TEX_DIR
     tex_filename = "output.tex"
