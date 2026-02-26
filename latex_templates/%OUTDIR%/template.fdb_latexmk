@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1772127797.73349 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772127798.33268 2
+["pdflatex"] 1772127944.52696 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772127945.03127 2
   "%OUTDIR%//latex_templates/src/acknowledge.tex" 0 -1 0 ""
   "%OUTDIR%//latex_templates/src/header_oproperties" 0 -1 0 ""
   "%OUTDIR%//latex_templates/src/newcommands" 0 -1 0 ""
-  "%OUTDIR%/template.aux" 1772127798.21572 138 dfd98a311dd1033c83c001c747190af7 "pdflatex"
+  "%OUTDIR%/template.aux" 1772127944.95112 138 dfd98a311dd1033c83c001c747190af7 "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772127795.84762 1770 b24863a08080f20ae4f36b162e037587 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772127942.57204 1758 963986eb9819892186142bba37f17e69 ""
   "/latex_templates/src/acknowledge.tex" 0 -1 0 ""
   "/latex_templates/src/header_oproperties" 0 -1 0 ""
   "/latex_templates/src/newcommands" 0 -1 0 ""
@@ -81,7 +81,7 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
-  "template.tex" 1772127795.84762 1770 b24863a08080f20ae4f36b162e037587 ""
+  "template.tex" 1772127942.57204 1758 963986eb9819892186142bba37f17e69 ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"
