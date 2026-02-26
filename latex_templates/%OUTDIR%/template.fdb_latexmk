@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1772136714.90269 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772136715.36897 2
-  "%OUTDIR%/template.aux" 1772136715.28475 680 74febdcdcb109b44c970a989146e622a "pdflatex"
-  "%OUTDIR%/template.out" 1772136715.28575 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
+["pdflatex"] 1772136781.38854 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" "template.pdf" "template" 1772136781.88941 2
+  "%OUTDIR%/template.aux" 1772136781.79766 679 2979bbb8d1225c4b4145da0b4e7cc8a0 "pdflatex"
+  "%OUTDIR%/template.out" 1772136781.79766 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772136713.25412 1501 13b5feeeb63b35bad7b5780093d7a01e ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex" 1772136779.82108 1523 d3a74e6c9efae764eff5ababa5ff289c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -44,6 +44,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1705352648 2462 6bc53756156dbd71c1ad550d30a3b93f ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1668028059 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
   "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""
@@ -69,7 +70,7 @@
   "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
   "header_oproperties.tex" 1772131318.79041 1373 136014d5e729d8297fe9cb6b9fd1cbf4 ""
   "newcommands.tex" 1772136197.80782 6999 2d75fd7d51dc6f1cdf7c17efcc1addfc ""
-  "template.tex" 1772136713.25412 1501 13b5feeeb63b35bad7b5780093d7a01e ""
+  "template.tex" 1772136779.82108 1523 d3a74e6c9efae764eff5ababa5ff289c ""
   (generated)
   "%OUTDIR%/template.aux"
   "%OUTDIR%/template.log"

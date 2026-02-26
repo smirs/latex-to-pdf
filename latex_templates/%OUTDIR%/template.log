@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  26 FEB 2026 14:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -63,6 +63,17 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -168,7 +179,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip50
+\Hy@SectionHShift=\skip59
 ) (./newcommands.tex
 \CommencementCount=\count276
 \StartDateCount=\count277
@@ -187,24 +198,24 @@ LaTeX Warning: Unused global option(s):
 (%OUTDIR%/template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -254,31 +265,11 @@ LaTeX Font Info:    ... okay on input line 11.
 \makeMPintoPDFobject=\count287
 \everyMPtoPDFconversion=\toks20
 )
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 12.
 \@outlinefile=\write3
 \openout3 = `template.out'.
 
  (./header_oproperties.tex
-./header_oproperties.tex:1: Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.1 \pagestyle{fancy}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./header_oproperties.tex:2: Undefined control sequence.
-l.2 \fancyhf
-            {} % clear default header/footer
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ./header_oproperties.tex:8: Undefined control sequence.
 l.8 \setstretch
                {1.2}
@@ -287,18 +278,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-./header_oproperties.tex:10: Undefined control sequence.
-l.10 \fancyfoot
-               [R]{Page \thepage/\pageref{LastPage}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 10.
 
 ./header_oproperties.tex:11: Undefined control sequence.
 l.11 \linenumbers
@@ -309,115 +288,33 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./header_oproperties.tex:17: Undefined control sequence.
-l.17 \fancyhead
-               [L]{
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./header_oproperties.tex:23: Undefined control sequence.
-l.23 				\setstretch
-                    {0.7}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
-./header_oproperties.tex:32: Undefined control sequence.
-l.32 				\setstretch
-                    {0.7}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 33.
-./header_oproperties.tex:40: Undefined control sequence.
-l.40 				\includegraphics
-                         [width=\linewidth]{./src/logo.png}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./header_oproperties.tex:40: Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.40 				\includegraphics[width=\linewidth]
-                                           {./src/logo.png}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./header_oproperties.tex:40: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.40 				\includegraphics[width=\linewidth]
-                                           {./src/logo.png}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (64.85341pt too wide) in paragraph at lines 40--41
-[]\OT1/cmr/m/n/10 [width=]./src/logo.png  
- []
-
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 19--45
-[]$[]$ 
- []
-
-
-./header_oproperties.tex:51: LaTeX Error: Command \headrulewidth undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \renewcommand{\headrulewidth}
-                                  {0pt} % removes the default line
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 )
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
@@ -432,18 +329,84 @@ Overfull \hbox (33.0pt too wide) in paragraph at lines 16--17
  []
 
 )
-Overfull \hbox (33.0pt too wide) in paragraph at lines 25--35
+Overfull \hbox (33.0pt too wide) in paragraph at lines 25--36
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--35
+Underfull \hbox (badness 10000) in paragraph at lines 25--36
 
  []
 
-[1
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:37: Undefined control sequence.
+\f@nch@olh ...extwidth } \raggedright \setstretch 
+                                                  {0.7} {\color {black}\scri...
+l.37 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (%OUTDIR%/template.aux)
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:37: Undefined control sequence.
+\f@nch@olh ...textwidth } \raggedleft \setstretch 
+                                                  {0.7} {\footnotesize \text...
+l.37 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 37.
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:37: Undefined control sequence.
+\f@nch@olh ...dth } \raggedright \includegraphics 
+                                                  [width=\linewidth ]{./src/...
+l.37 \end{document}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:37: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.37 \end{document}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/template.tex:37: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.37 \end{document}
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (64.85341pt too wide) has occurred while \output is active
+[]\OT1/cmr/m/n/10 [width=]./src/logo.png  
+ []
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 37.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] (%OUTDIR%/template.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -462,15 +425,15 @@ Package rerunfilecheck Info: Checksums for `template.out':
 (rerunfilecheck)             After:  F92BC2537E772CE079BE5BEE78FF835F;73.
  ) 
 Here is how much of TeX's memory you used:
- 9001 strings out of 475580
- 138309 string characters out of 5782560
- 1938975 words of memory out of 5000000
- 31091 multiletter control sequences out of 15000+600000
+ 9187 strings out of 475580
+ 140877 string characters out of 5782560
+ 1939975 words of memory out of 5000000
+ 31273 multiletter control sequences out of 15000+600000
  561720 words of font info for 48 fonts, out of 8000000 for 9000
  309 hyphenation exceptions out of 8191
- 75i,9n,79p,384b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,384b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on %OUTDIR%/template.pdf (1 page, 94999 bytes).
+Output written on %OUTDIR%/template.pdf (1 page, 94694 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
