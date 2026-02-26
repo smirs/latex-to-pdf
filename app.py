@@ -16,7 +16,7 @@ def index():
 @app.route("/generate", methods=["POST"])
 def generate():
     name = request.form["name"]
-    score = request.form["score"]
+    address = request.form["address"]
 
     # Read the main LaTeX template
     main_tex_path = os.path.join(TEX_DIR, MAIN_TEX_FILE)
@@ -25,7 +25,7 @@ def generate():
 
     # Replace placeholders
     latex_content = latex_content.replace("{{NAME}}", name)
-    latex_content = latex_content.replace("{{SCORE}}", score)
+    latex_content = latex_content.replace("{{ADDRESS}}", address)
 
     # Create output tex file inside TEX_DIR
     tex_filename = "output.tex"
