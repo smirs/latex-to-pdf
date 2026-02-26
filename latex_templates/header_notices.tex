@@ -1,0 +1,53 @@
+\pagestyle{fancy}
+\fancyhf{} % clear default header/footer
+
+\setlength{\fboxrule}{1.2pt}
+\setlength{\fboxsep}{2pt}
+
+% set space between lines
+\setstretch{1.2}
+
+\fancyfoot[R]{Page \thepage/\pageref{LastPage}}
+\linenumbers
+
+\setlength{\fboxsep}{8pt}
+\setlength{\fboxrule}{1pt}
+
+% Custom header
+\fancyhead[L]{
+
+		\begin{minipage}{\textwidth}
+
+			\begin{minipage}{0.45\textwidth}
+				\raggedright
+				\setstretch{0.7}
+				{\color{black}\small This notice may have legal consequences.\\
+				If you do not understand it, consult your attorney.\\}
+
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.45\textwidth}
+				\raggedleft
+				\setstretch{0.7}
+				{\footnotesize \textbf{O' Properties STL} $\|$ Proper Property Management\\
+				Visit \href{https://opropertiestl.com/products/}{opropertiestl.com} for more Real Estate templates
+				Phone:(626) 689-5848 $\|$ Email: info@opropertiestl.com}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.075\textwidth}
+				\raggedright
+				\includegraphics[width=\linewidth]{./src/logo.png}
+			\end{minipage}
+
+		\hrule
+		\end{minipage}
+	
+}
+
+\setlength{\footskip}{40pt} % space between text and footer line
+
+
+\renewcommand{\headrulewidth}{0pt} % removes the default line
+
+\setlength{\headheight}{80pt}
+\setlength{\topmargin}{-80pt}
