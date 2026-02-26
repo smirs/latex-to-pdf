@@ -16,7 +16,7 @@ def index():
     return render_template("form.html")
 
 @app.route("/generate_commencement", methods=["POST"])
-def generate():
+def generate_commencement():
     name = request.form["name"]
     address = request.form["address"]
     moveindate = request.form["moveindate"]
@@ -60,7 +60,7 @@ def generate():
     return send_file(pdf_path, as_attachment=True)
 
 @app.route("/generate_lease", methods=["POST"])
-def generate():
+def generate_lease():
     name = request.form["name"]
     address = request.form["address"]
     moveindate = request.form["moveindate"]
