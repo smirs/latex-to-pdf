@@ -102,6 +102,7 @@ def generate_lease():
         return f"<h3>LaTeX compilation failed:</h3><pre>{result.stdout}\n{result.stderr}</pre>"
 
     return send_file(pdf_path, as_attachment=True)
+
 if __name__ == "__main__":
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     app.run(debug=True, host="0.0.0.0", port=5000)
