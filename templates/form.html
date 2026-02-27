@@ -28,13 +28,21 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
@@ -47,6 +55,7 @@
   ======================================================== -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+
 
 <body style="font-family: Tahoma; font-weight: normal; ">
 
@@ -122,7 +131,7 @@ h1, h2, h3, h4, h5 {
 
 
         <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="commencement addundum">
+        <img src="/assets/img/commencement.png" class="card-img-top" alt="commencement addundum">
         <div class="card-body">
             <h5 class="card-title">Commencement Addendum</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -137,14 +146,14 @@ h1, h2, h3, h4, h5 {
         </div>
 
         <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="residential lease template">
+        <img src="/assets/img/lease.png" class="card-img-top" alt="residential lease template">
         <div class="card-body">
             <h5 class="card-title">Residential Lease</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <button 
                 class="btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#leaseModal"
+                data-bs-target="#tenantModal"
                 data-template="residential_lease">
                 Generate PDF
             </button>
@@ -154,31 +163,6 @@ h1, h2, h3, h4, h5 {
 
 </div>
 </section>
-
-
-{# SCRIPTS START #}
-<script>
-const leaseModal = document.getElementById('leaseModal')
-
-leaseModal.addEventListener('show.bs.modal', function (event) {
-  const button = event.relatedTarget
-  const templateType = button.getAttribute('data-template')
-
-  document.getElementById('templateType').value = templateType
-})
-</script>
-
-<script>
-const commencementModal = document.getElementById('commencementModal')
-
-commencementModal.addEventListener('show.bs.modal', function (event) {
-  const button = event.relatedTarget
-  const templateType = button.getAttribute('data-template')
-
-  document.getElementById('templateType').value = templateType
-})
-</script>
-{# SCRIPTS END #}
 
 
 <section id="faq"  data-aos="fade-up">
@@ -279,15 +263,7 @@ commencementModal.addEventListener('show.bs.modal', function (event) {
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="/assets/vendor/aos/aos.js"></script>
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-  
+
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
@@ -311,55 +287,72 @@ alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
+
+
 {# LEASE STARTS #}
+<!-- Modal 1: Tenant Info -->
+<div class="modal fade" id="tenantModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tenant Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="tenantForm">
+          <div class="mb-3">
+            <label>Tenant Name</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label>Property Address</label>
+            <input type="text" class="form-control" name="address" required>
+          </div>
+          <div class="mb-3">
+            <label>Move-in Date</label>
+            <input type="date" class="form-control" name="moveindate" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="toLeaseTerms">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2: Lease Terms -->
 <div class="modal fade" id="leaseModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      
       <div class="modal-header">
-        <h5 class="modal-title">Enter Lease Details</h5>
+        <h5 class="modal-title">Lease Terms</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-
-      <form method="POST" action="/generate-lease">
+      <form id="leaseForm" method="POST" action="/generate-lease">
         <div class="modal-body">
+          <!-- Hidden inputs for tenant info -->
+          <input type="hidden" name="name" id="tenant_name_hidden">
+          <input type="hidden" name="address" id="address_hidden">
+          <input type="hidden" name="moveindate" id="move_in_date_hidden">
 
-          <!-- Hidden field to store which template -->
-          <input type="hidden" name="template_type" id="templateType">
-
-          <div class="row">
-
-
-            <div class="col-md-6 mb-3">
-              <label>Tenant Name</label>
-              <input type="text" class="form-control" name="name" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <label>Move-in Date</label>
-              <input type="date" class="form-control" name="moveindate" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <label>Address</label>
-              <input type="text" class="form-control" name="address" required>
-            </div>
+          <div class="mb-3">
+            <label>Lease Start Date</label>
+            <input type="date" class="form-control" name="startdate" required>
           </div>
-
+          <div class="mb-3">
+            <label>Monthly Rent ($)</label>
+            <input type="number" class="form-control" name="rent" required>
+          </div>
         </div>
-
         <div class="modal-footer">
-          <button type="submit" class="btn btn-success">
-            Generate PDF
-          </button>
+          <button type="submit" class="btn btn-success">Generate PDF</button>
         </div>
       </form>
-
     </div>
   </div>
 </div>
 {# LEASE ENDS #}
-
 
 
 {# COMMENCEMENT STARTS #}
@@ -368,7 +361,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title">Enter Tenant Info</h5>
+        <h5 class="modal-title">Tenant Info</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
@@ -410,6 +403,67 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   </div>
 </div>
 {# COMMENCEMENT ENDS #}
+
+
+
+{# SCRIPTS START #}
+<script>
+const tenantModal = document.getElementById('tenantModal')
+
+tenantModal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const templateType = button.getAttribute('data-template')
+
+  document.getElementById('templateType').value = templateType
+})
+</script>
+
+<script>
+const leaseModal = document.getElementById('leaseModal')
+
+leaseModal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const templateType = button.getAttribute('data-template')
+
+  document.getElementById('templateType').value = templateType
+})
+</script>
+
+<script>
+const commencementModal = document.getElementById('commencementModal')
+
+commencementModal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const templateType = button.getAttribute('data-template')
+
+  document.getElementById('templateType').value = templateType
+})
+</script>
+
+<script>
+document.getElementById('toLeaseTerms').addEventListener('click', function() {
+  // Get tenant form values
+  const tenantForm = document.getElementById('tenantForm');
+  const tenantData = new FormData(tenantForm);
+
+  // Pass data to hidden fields in lease modal
+  document.getElementById('tenant_name_hidden').value = tenantData.get('name');
+  document.getElementById('address_hidden').value = tenantData.get('address');
+  document.getElementById('move_in_date_hidden').value = tenantData.get('moveindate');
+
+  // Hide Tenant Modal
+  const tenantModalEl = document.getElementById('tenantModal');
+  const tenantModal = bootstrap.Modal.getInstance(tenantModalEl);
+  tenantModal.hide();
+
+  // Show Lease Modal
+  const leaseModalEl = document.getElementById('leaseModal');
+  const leaseModal = new bootstrap.Modal(leaseModalEl);
+  leaseModal.show();
+});
+</script>
+
+{# SCRIPTS END #}
 
 
 </body>

@@ -4,56 +4,65 @@
 % Define variables for the lease agreement: INSERT YOUR VALUES HERE
 
 %############################################## VARIABLES ##########################################################
+%####### Tenant
 \newcommand{\TenantNames}{Marry L. Smith and Josef K. Smith}  % tenant's full name
 \newcommand{\TenantAddress}{123 Main St, St. Louis MO 63101}
 \newcommand{\TenantPhone}{(656) 555-1234}
 \newcommand{\TenantEmail}{tammy.pust@gmail.com}
 
+%####### Lease Terms
 \newcommand{\Rent}{\num{1445.00}}  % monthly rent
 \newcommand{\SecurityDeposit}{\num{1445.00}}  % security deposit amount
-\newcommand{\Commencement}{2025-12-23}
-\newcommand{\LeaseStart}{2025-12-31}
-\newcommand{\LeaseEnd}{2026-12-30}
+\newcommand{\Commencement}{2025-12-23} % the commencement date (move in date)
+\newcommand{\LeaseStart}{2025-12-31} % lease starting date
+\newcommand{\LeaseEnd}{2026-12-30} % lease ending date
 \newcommand{\Duration}{\num{12}}  % duration of the lease in months
-\newcommand{\NumPets}{\num{2}}  % number of pets
+\newcommand{\MaxTenantsAllowed}{1}  % maximum number of tenants allowed
 
+%####### Property
 \newcommand{\PropertyAddress}{345 Pine St, St. Louis MO 63101}
+\newcommand{\UnitNum}{K}
 \newcommand{\State}{Missouri}  % state where the property is located
 \newcommand{\City}{St. Louis}  % city where the property is located
 \newcommand{\County}{St. Louis County}  % county where the property is located
 \newcommand{\Municipality}{St. Louis}  % municipality where the property is located
 
+%####### Pets
+\newcommand{\NumPets}{\num{2}}  % number of pets
+\newcommand{\PetDeposit}{\num{200.00}}  % non-refundable pet deposit per pet
+\newcommand{\MaxPetsAllowed}{1}  % maximum number of pets allowed
 
 %############################################## CONSTANTS ##########################################################
+%####### Payee 
 \newcommand{\PayeeName}{Pamela Jones}  % name of the payee for rent payments
 \newcommand{\PayeeAddress}{344 Main St, Chicago IL 60601}
-\newcommand{\UnitNum}{K}
 
+%####### Landlord 
 \newcommand{\LandlordName}{Jacob J. White}  % landlord's full name
 \newcommand{\Company}{O'Properties STL}  % property management company name
 \newcommand{\LandlordAddress}{788 Main St, Miami FL 33101}  % landlord's address
 \newcommand{\LandlordPhone}{(626) 443-6544}  % landlord's phone number
 \newcommand{\LandlordEmail}{jacob.white@gmail.com}  % landlord's email address
 
+%####### Property Manager 
 \newcommand{\ManagerPhone}{(687) 546-7665}
 \newcommand{\ManagerEmail}{jacob.white@gmail.com}	
 
+%####### Lease Fees
 \newcommand{\latefee}{\num{25.00}}  % late fee amount per day
 \newcommand{\PenaltyFine}{\num{25.00}}  % fine for failure to report each maintenance issues
 \newcommand{\returnedcheckfee}{\num{35.00}}  % fee for returned checks
 \newcommand{\paymentday}{FIRST}  % day of the month when rent is due
 \newcommand{\OtherFees}{\num{300.00}}  % other fees
+\newcommand{\discount}{0.00}  % discount amount for early payment
 
-\newcommand{\MaxTenantsAllowed}{1}  % maximum number of tenants allowed
-\newcommand{\MaxPetsAllowed}{1}  % maximum number of pets allowed
-\newcommand{\PetDeposit}{\num{200.00}}  % non-refundable pet deposit per pet
+%####### Keys
 \newcommand{\lostkeyfee}{\num{25.00}}  % fee for lost keys
 \newcommand{\maxkeyfee}{\num{100.00}}  % fee for unreturned keys
 \newcommand{\numkeyfront}{2}  % number of front door keys
 \newcommand{\numkeymailbox}{1}  % number of mailbox keys
 \newcommand{\numkeypool}{1}  % number of pool access keys
 \newcommand{\numkeyother}{0}  % number of other keys
-\newcommand{\discount}{0.00}  % discount amount for early payment
 %#################################################################################################################
 
 
