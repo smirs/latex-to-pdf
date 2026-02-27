@@ -15,7 +15,7 @@ OUTPUT_FOLDER = "output"
 def index():
     return render_template("form.html")
 
-@app.route("/generate_commencement", methods=["POST"])
+@app.route("/generate-commencement", methods=["POST"])
 def generate_commencement():
     name = request.form["name"]
     address = request.form["address"]
@@ -59,7 +59,7 @@ def generate_commencement():
 
     return send_file(pdf_path, as_attachment=True)
 
-@app.route("/generate_lease", methods=["POST"])
+@app.route("/generate-lease", methods=["POST"])
 def generate_lease():
     name = request.form["name"]
     address = request.form["address"]

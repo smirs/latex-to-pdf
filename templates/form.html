@@ -114,151 +114,49 @@ h1, h2, h3, h4, h5 {
 <main id="main"> 
 
 
-      <!-- ======= templates Section ======= -->
-    <section id="templates" class="templates">
-      <div class="container">
-
-    {# ------------------- #}
-        <h2>Enter Tenant Info</h2>
-
-    <div class="row">
-        <a>COMMENCEMENT</a>
-        <form action="/generate_commencement" method="post">
-            Tenant Name(s): <input type="text" name="name" required><br>
-            Property Address: <input type="text" name="address" required><br>
-            Move-in Date: <input type="date" name="moveindate" required><br>
-
-            <button type="submit">Build Commencement Addendum</button>
-        </form>
-    </div>
-    <br>
-    <div class="row">
-        <a>LEASE</a>
-        <form action="/generate_lease" method="post">
-            Tenant Name(s): <input type="text" name="name" required><br>
-            Property Address: <input type="text" name="address" required><br>
-            Move-in Date: <input type="date" name="moveindate" required><br>
-
-            <button type="submit">Build Residential Lease</button>
-        </form>
-    </div>
-    {# ------------------ #}
-
-      </div>
-    </section><!-- End templates Section -->
-
-
 <section id="templates" class="templates">
       <div class="container">
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
         <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="commencement addundum">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Commencement Addendum</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+              <button 
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#commencementModal"
+                data-template="commencement_addundum">
+                Generate PDF
+            </button>
         </div>
         </div>
+
         <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="residential lease template">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Residential Lease</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+              <button 
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#leaseModal"
+                data-template="residential_lease">
+                Generate PDF
+            </button>
         </div>
         </div>
-        <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
+
 
 </div>
 </section>
 
 
-
-{# OOOOOOOOOOOOOOOOOOOOOOOOO #}
-<section id="templates" class="templates">
-<div class="container">
-
-<div class="card p-3">
-  <h5>Residential Lease Agreement</h5>
-  <button 
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#leaseModal"
-      data-template="residential_lease">
-      Generate PDF
-  </button>
-</div>
-
-{# fffff #}
-<div class="modal fade" id="leaseModal" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title">Enter Lease Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <form method="POST" action="/generate-pdf">
-        <div class="modal-body">
-
-          <!-- Hidden field to store which template -->
-          <input type="hidden" name="template_type" id="templateType">
-
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label>Landlord Name</label>
-              <input type="text" class="form-control" name="landlord_name" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <label>Tenant Name</label>
-              <input type="text" class="form-control" name="tenant_name" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <label>Lease Start Date</label>
-              <input type="date" class="form-control" name="start_date" required>
-            </div>
-
-            <div class="col-md-6 mb-3">
-              <label>Monthly Rent ($)</label>
-              <input type="number" class="form-control" name="rent" required>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-success">
-            Generate PDF
-          </button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-{# fffff #}
-</div>
-</section>
-
+{# SCRIPTS START #}
 <script>
 const leaseModal = document.getElementById('leaseModal')
 
@@ -269,7 +167,18 @@ leaseModal.addEventListener('show.bs.modal', function (event) {
   document.getElementById('templateType').value = templateType
 })
 </script>
-{# OOOOOOOOOOOOOOOOOOOOOOOO #}
+
+<script>
+const commencementModal = document.getElementById('commencementModal')
+
+commencementModal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const templateType = button.getAttribute('data-template')
+
+  document.getElementById('templateType').value = templateType
+})
+</script>
+{# SCRIPTS END #}
 
 
 <section id="faq"  data-aos="fade-up">
@@ -281,9 +190,9 @@ leaseModal.addEventListener('show.bs.modal', function (event) {
 </div>
 </section>
 
-
-
 </main>
+
+
 
       <!-- ======= Cta Section ======= -->
 
@@ -294,7 +203,7 @@ leaseModal.addEventListener('show.bs.modal', function (event) {
         <div class="text-center">
           <h4><i class="bi bi-people-fill"></i> Let's Talk One-on-one!</h4>
           <a class="cta-btn" target="_blank" href="https://calendly.com/saeedmirshekari/o-properties-free-intro"><i class="bi bi-gift" style="color:#FFF;"></i>  SCHEDULE FREE CALL</a>
-          <br></br>
+          <br><br>
           <p>Looking for a trusted partner to manage your rental property in St. Louis or help you find the perfect home? Whether you're an out-of-state landlord seeking stress-free property management or a tenant planning a move to St. Louis, we’ve got you covered. Let’s discuss your needs today!</p>
         </div>
 
@@ -402,19 +311,107 @@ alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/assets/admin/";
-        });
-      }
-    });
-  }
-</script>
+{# LEASE STARTS #}
+<div class="modal fade" id="leaseModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title">Enter Lease Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <form method="POST" action="/generate-lease">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+
+
+            <div class="col-md-6 mb-3">
+              <label>Tenant Name</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Move-in Date</label>
+              <input type="date" class="form-control" name="moveindate" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Address</label>
+              <input type="text" class="form-control" name="address" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# LEASE ENDS #}
+
+
+
+{# COMMENCEMENT STARTS #}
+<div class="modal fade" id="commencementModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title">Enter Tenant Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <form method="POST" action="/generate-commencement">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+
+
+            <div class="col-md-6 mb-3">
+              <label>Tenant Name</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Move-in Date</label>
+              <input type="date" class="form-control" name="moveindate" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Address</label>
+              <input type="text" class="form-control" name="address" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# COMMENCEMENT ENDS #}
+
 
 </body>
+
 </html>
