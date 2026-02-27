@@ -162,6 +162,121 @@ h1, h2, h3, h4, h5 {
       </div>
     </section><!-- End templates Section -->
 
+
+<section id="templates" class="templates">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+        <img src="/assets/img/green.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+
+</div>
+</section>
+
+
+
+{# OOOOOOOOOOOOOOOOOOOOOOOOO #}
+<section id="templates" class="templates">
+<div class="container">
+
+<div class="card p-3">
+  <h5>Residential Lease Agreement</h5>
+  <button 
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#leaseModal"
+      data-template="residential_lease">
+      Generate PDF
+  </button>
+</div>
+
+{# fffff #}
+<div class="modal fade" id="leaseModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title">Enter Lease Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <form method="POST" action="/generate-pdf">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label>Landlord Name</label>
+              <input type="text" class="form-control" name="landlord_name" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Tenant Name</label>
+              <input type="text" class="form-control" name="tenant_name" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Lease Start Date</label>
+              <input type="date" class="form-control" name="start_date" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label>Monthly Rent ($)</label>
+              <input type="number" class="form-control" name="rent" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# fffff #}
+</div>
+</section>
+
+{# OOOOOOOOOOOOOOOOOOOOOOOO #}
+
+
 <section id="faq"  data-aos="fade-up">
 <div class="container">
     <div class="section-title" data-aos="fade-up">
