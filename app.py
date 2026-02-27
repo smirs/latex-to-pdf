@@ -105,3 +105,30 @@ def generate_lease():
 if __name__ == "__main__":
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     app.run(debug=True, host="0.0.0.0", port=5000)
+
+
+@app.route("/generate-pdf", methods=["POST"])
+def generate_pdf():
+    template_type = request.form["template_type"]
+    landlord_name = request.form["landlord_name"]
+    tenant_name = request.form["tenant_name"]
+    start_date = request.form["start_date"]
+    rent = request.form["rent"]
+
+    # 1️⃣ Inject variables into LaTeX template
+    with open("templates/lease_template.tex") as f:
+        latex_content = f.read()
+
+    latex_content = latex_content.replace("{{landlord_name}}", landlord_name)
+    latex_content = latex_content.replace("{{tenant_name}}", tenant_name)
+    latex_content = latex_content.replace("{{start_date}}", start_date)
+    latex_content = latex_content.replace("{{rent}}", rent)
+
+    output_tex = "output.tex"
+    with open(output_tex, "w") as f:
+        f.write(latex_content)
+
+    # 2️⃣ Compile LaTeX
+    subprocess.run(["pdflatex", output_tex])
+
+    return send_file("output.pdf", as_attachment=True)

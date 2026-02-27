@@ -274,6 +274,17 @@ h1, h2, h3, h4, h5 {
 </div>
 </section>
 
+<script>
+const leaseModal = document.getElementById('leaseModal')
+
+leaseModal.addEventListener('show.bs.modal', function (event) {
+  const button = event.relatedTarget
+  const templateType = button.getAttribute('data-template')
+
+  document.getElementById('templateType').value = templateType
+})
+</script>
+
 {# OOOOOOOOOOOOOOOOOOOOOOOO #}
 
 
