@@ -297,35 +297,40 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
-      <div class="modal-header">
-        <h5 class="modal-title">Tenant Info</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
+        <div class="modal-header">
+            <h5 class="modal-title">Tenant Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
 
-      <div class="modal-body">
-        <form id="tenantForm">
-          <div class="mb-3">
-            <label>Tenant Name(s)</label>
-            <input type="text" class="form-control" name="tenantname" required>
-          </div>
-          <div class="mb-3">
-            <label>Tenant Address</label>
-            <input type="text" class="form-control" name="tenantaddress" required>
-          </div>
-          <div class="mb-3">
-            <label>Tenant Email</label>
-            <input type="text" class="form-control" name="tenantemail" required>
-          </div>
-          <div class="mb-3">
-            <label>Tenant Phone</label>
-            <input type="text" class="form-control" name="tenantphone" required>
-          </div>       
-        </form>
-      </div>
+        <div class="modal-body">
+            <form id="tenantForm">
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="toLeaseTerms">Next</button>
-      </div>
+            <div class="mb-3">
+                <label>Tenant Full Name(s)</label>
+                <input type="text" class="form-control" name="tenantname" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Tenant Address</label>
+                <input type="text" class="form-control" name="tenantaddress" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Contact Email</label>
+                <input type="text" class="form-control" name="tenantemail" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Contact Phone</label>
+                <input type="text" class="form-control" name="tenantphone" required>
+            </div>  
+                
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="toLeaseTerms">Next</button>
+        </div>
 
     </div>
   </div>
@@ -343,7 +348,6 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
 
     <div class="modal-body">
-
         <form id="leaseForm" method="POST" action="/generate-lease">
             <!-- Hidden inputs for tenant info -->
             <input type="hidden" name="tenantname" id="tenant_name_hidden">
@@ -357,9 +361,35 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
             </div>
 
             <div class="mb-3">
+                <label>Lease End Date</label>
+                <input type="date" class="form-control" name="enddate" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Duration (months)</label>
+                <input type="number" class="form-control" name="duration" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Move-in Date</label>
+                <input type="date" class="form-control" name="moveindate" required>
+            </div>
+
+            <div class="mb-3">
                 <label>Monthly Rent ($)</label>
                 <input type="number" class="form-control" name="rent" required>
             </div>
+
+            <div class="mb-3">
+                <label>Security Deposit ($)</label>
+                <input type="number" class="form-control" name="securitydeposit" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Max Number of Tenants</label>
+                <input type="number" class="form-control" name="maxtenants" required>
+            </div>
+
 
             <div class="modal-footer">
             <button type="submit" class="btn btn-success">Generate PDF</button>

@@ -67,8 +67,14 @@ def generate_lease():
     tenantemail = request.form["tenantemail"]
     tenantphone = request.form["tenantphone"]
 
-    rent = request.form["rent"]
     startdate = request.form["startdate"]
+    enddate = request.form["enddate"]
+    duration = request.form["duration"]
+    moveindate = request.form["moveindate"]
+    rent = request.form["rent"]
+    securitydeposit = request.form["securitydeposit"]
+    maxtenants = request.form["maxtenants"]
+
     
     
     # Read the main LaTeX template
@@ -82,9 +88,13 @@ def generate_lease():
     latex_content = latex_content.replace("{{TENANTEMAIL}}", tenantemail)
     latex_content = latex_content.replace("{{TTENANTPHONES}}", tenantphone)
 
-    latex_content = latex_content.replace("{{RENT}}", rent)
     latex_content = latex_content.replace("{{STARTDATE}}", startdate)
-    
+    latex_content = latex_content.replace("{{ENDDATE}}", enddate)
+    latex_content = latex_content.replace("{{DURATION}}", duration)
+    latex_content = latex_content.replace("{{COMMENCEMENT}}", moveindate)
+    latex_content = latex_content.replace("{{RENT}}", rent)
+    latex_content = latex_content.replace("{{SECURITYDEPOSITE}}", securitydeposit)
+    latex_content = latex_content.replace("{{RMAXTENANTST}}", maxtenants)
 
     # Create output tex file inside TEX_DIR
     tex_filename = "output_lease.tex"
