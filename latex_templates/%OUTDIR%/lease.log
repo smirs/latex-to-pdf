@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  27 FEB 2026 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  27 FEB 2026 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -294,7 +294,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \c@FieldCounter1=\count303
 \c@FieldCounter=\count304
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 42.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
@@ -307,24 +307,24 @@ LaTeX Warning: Unused global option(s):
 (%OUTDIR%/lease.aux)
 \openout1 = `lease.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -381,50 +381,50 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 42.
-Package hyperref Info: Link coloring OFF on input line 42.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 44.
+Package hyperref Info: Link coloring OFF on input line 44.
 \@outlinefile=\write3
 \openout3 = `lease.out'.
 
  (./header_oproperties.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:72: Use of \??? doesn't match its definition.
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:74: Use of \??? doesn't match its definition.
 <argument> \???  
                  ! LaTeX Error: Unknown fp word RENT.
-l.72 ... to pay a total of \DateBox{\$\totallease}
+l.74 ... to pay a total of \DateBox{\$\totallease}
                                                    USD to Landlord for renta...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:72: Use of \??? doesn't match its definition.
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:74: Use of \??? doesn't match its definition.
 <argument> \???  
                  ! LaTeX Error: Invalid operation fp_to_decimal(nan)
-l.72 ... to pay a total of \DateBox{\$\totallease}
+l.74 ... to pay a total of \DateBox{\$\totallease}
                                                    USD to Landlord for renta...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:72: Use of \??? doesn't match its definition.
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:74: Use of \??? doesn't match its definition.
 <argument> \???  
                  ! LaTeX Error: Unknown fp word RENT.
-l.72 ... to pay a total of \DateBox{\$\totallease}
+l.74 ... to pay a total of \DateBox{\$\totallease}
                                                    USD to Landlord for renta...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:72: Use of \??? doesn't match its definition.
+/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex:74: Use of \??? doesn't match its definition.
 <argument> \???  
                  ! LaTeX Error: Invalid operation fp_to_decimal(nan)
-l.72 ... to pay a total of \DateBox{\$\totallease}
+l.74 ... to pay a total of \DateBox{\$\totallease}
                                                    USD to Landlord for renta...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -432,85 +432,85 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 
-Overfull \hbox (11.09259pt too wide) in paragraph at lines 78--79
+Overfull \hbox (11.09259pt too wide) in paragraph at lines 80--81
 \OT1/cmr/m/n/10 The se-cu-rity de-posit of  [] payable upon ex-e-cu-tion of this lease, shall be held by  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 79.
+(Font)              <7> on input line 81.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
+(Font)              <5> on input line 81.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 79.
+(Font)              <8> on input line 81.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 79.
+(Font)              <6> on input line 81.
 <logo.png, id=24, 401.5pt x 401.5pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 79.
+Package pdftex.def Info: logo.png  used on input line 81.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 79.
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 81.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./logo.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 99.
+Package pdftex.def Info: logo.png  used on input line 101.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 99.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 101.
 
 [2]
 
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 101.
+LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 103.
 
 
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 104.
+LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 106.
 
 
-LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 104.
+LaTeX Warning: Reference `tenant_responsibilities' on page 3 undefined on input line 106.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 115.
+Package pdftex.def Info: logo.png  used on input line 117.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 115.
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 117.
 
 [3]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 143.
+Package pdftex.def Info: logo.png  used on input line 145.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
 
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 143.
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 145.
 
 [4]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 162.
+Package pdftex.def Info: logo.png  used on input line 164.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 162.
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 164.
 
 [5]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 176.
+Package pdftex.def Info: logo.png  used on input line 178.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
 
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 176.
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 178.
 
 [6] (./acknowledge.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -523,21 +523,21 @@ Overfull \hbox (33.0pt too wide) in paragraph at lines 16--17
  []
 
 )
-Overfull \hbox (33.0pt too wide) in paragraph at lines 25--178
+Overfull \hbox (33.0pt too wide) in paragraph at lines 25--180
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--178
+Underfull \hbox (badness 10000) in paragraph at lines 25--180
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 180.
+Package pdftex.def Info: logo.png  used on input line 182.
 (pdftex.def)             Requested size: 35.23018pt x 35.22673pt.
 
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 180.
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 182.
 
 [7] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -562,7 +562,7 @@ Package rerunfilecheck Info: Checksums for `lease.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  0C0161913B3F6FEF961A6369D73E663A;3029.
 
-Package lastpage Warning: Rerun to get the references right on input line 180.
+Package lastpage Warning: Rerun to get the references right on input line 182.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -574,7 +574,7 @@ Here is how much of TeX's memory you used:
  309 hyphenation exceptions out of 8191
  73i,19n,80p,1743b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on %OUTDIR%/lease.pdf (7 pages, 143595 bytes).
+Output written on %OUTDIR%/lease.pdf (7 pages, 143608 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

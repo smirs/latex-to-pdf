@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5 {
 <div class="breadcrumb-hero">
 <div class="container">
     <div class="breadcrumb-herol">
-    <h1>Real Estate Forms for Private Landlords</h1>
-    <h6>Access professionally designed, ready-to-use real estate templates created specifically for private landlords and property owners. From residential lease agreements to move-in inspection checklists, our documents help you stay organized, legally protected, and confident in every rental transaction.</h6>
+    <h1>Missouri Lease & Rental Forms for Landlords</h1>
+    <h6>Generate customized Missouri lease agreements and rental forms in minutes. Enter your details and instantly download professional, tenant-ready PDFs — fast, simple, and built for private landlords.</h6>
     </div>
 </div>
 </div>
@@ -131,31 +131,32 @@ h1, h2, h3, h4, h5 {
 
 
 
-        <div class="card" style="width: 18rem;">
-        <img src="/assets/img/commencement.png" class="card-img-top" alt="commencement addundum">
-        <div class="card-body">
-            <h5 class="card-title">Commencement Addendum</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button 
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#commencementModal"
-                data-template="commencement_addundum">
-                Generate PDF
-            </button>
-        </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 20rem;">
         <img src="/assets/img/lease.png" class="card-img-top" alt="residential lease template">
         <div class="card-body">
             <h5 class="card-title">Residential Lease</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Create a customized Missouri residential lease in minutes. Professionally formatted and ready for tenant signatures.</p>
               <button 
                 class="btn btn-primary"
                 data-bs-toggle="modal"
                 data-bs-target="#tenantModal"
                 data-template="residential_lease">
+                Generate PDF
+            </button>
+        </div>
+        </div>
+
+
+        <div class="card" style="width: 20rem;">
+        <img src="/assets/img/commencement.png" class="card-img-top" alt="commencement addundum">
+        <div class="card-body">
+            <h5 class="card-title">Commencement Addendum</h5>
+            <p class="card-text">Clarify the lease start date and possession terms. Generate professional addendum that protects both landlord and tenant from timing disputes.</p>
+              <button 
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#commencementModal"
+                data-template="commencement_addundum">
                 Generate PDF
             </button>
         </div>
@@ -295,29 +296,37 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <div class="modal fade" id="tenantModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
+
       <div class="modal-header">
         <h5 class="modal-title">Tenant Info</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+
       <div class="modal-body">
         <form id="tenantForm">
           <div class="mb-3">
-            <label>Tenant Name</label>
-            <input type="text" class="form-control" name="name" required>
+            <label>Tenant Name(s)</label>
+            <input type="text" class="form-control" name="tenantname" required>
           </div>
           <div class="mb-3">
-            <label>Property Address</label>
-            <input type="text" class="form-control" name="address" required>
+            <label>Tenant Address</label>
+            <input type="text" class="form-control" name="tenantaddress" required>
           </div>
           <div class="mb-3">
-            <label>Move-in Date</label>
-            <input type="date" class="form-control" name="moveindate" required>
+            <label>Tenant Email</label>
+            <input type="text" class="form-control" name="tenantemail" required>
           </div>
+          <div class="mb-3">
+            <label>Tenant Phone</label>
+            <input type="text" class="form-control" name="tenantphone" required>
+          </div>       
         </form>
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="toLeaseTerms">Continue</button>
+        <button type="button" class="btn btn-primary" id="toLeaseTerms">Next</button>
       </div>
+
     </div>
   </div>
 </div>
@@ -326,30 +335,39 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <div class="modal fade" id="leaseModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
+
+    <div class="modal-header">
         <h5 class="modal-title">Lease Terms</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <form id="leaseForm" method="POST" action="/generate-lease">
-        <div class="modal-body">
-          <!-- Hidden inputs for tenant info -->
-          <input type="hidden" name="name" id="tenant_name_hidden">
-          <input type="hidden" name="address" id="address_hidden">
-          <input type="hidden" name="moveindate" id="move_in_date_hidden">
+    </div>
 
-          <div class="mb-3">
-            <label>Lease Start Date</label>
-            <input type="date" class="form-control" name="startdate" required>
-          </div>
-          <div class="mb-3">
-            <label>Monthly Rent ($)</label>
-            <input type="number" class="form-control" name="rent" required>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-success">Generate PDF</button>
-        </div>
-      </form>
+
+    <div class="modal-body">
+
+        <form id="leaseForm" method="POST" action="/generate-lease">
+            <!-- Hidden inputs for tenant info -->
+            <input type="hidden" name="tenantname" id="tenant_name_hidden">
+            <input type="hidden" name="tenantaddress" id="tenant_address_hidden">
+            <input type="hidden" name="tenantemail" id="tenant_email_hidden">
+            <input type="hidden" name="tenantphone" id="tenant_phone_hidden">
+
+            <div class="mb-3">
+                <label>Lease Start Date</label>
+                <input type="date" class="form-control" name="startdate" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Monthly Rent ($)</label>
+                <input type="number" class="form-control" name="rent" required>
+            </div>
+
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Generate PDF</button>
+            </div>
+
+        </form>
+    </div>
+
     </div>
   </div>
 </div>
@@ -377,7 +395,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
             <div class="col-md-6 mb-3">
               <label>Tenant Name</label>
-              <input type="text" class="form-control" name="name" required>
+              <input type="text" class="form-control" name="tenantname" required>
             </div>
 
             <div class="col-md-6 mb-3">
@@ -387,7 +405,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
             <div class="col-md-6 mb-3">
               <label>Address</label>
-              <input type="text" class="form-control" name="address" required>
+              <input type="text" class="form-control" name="tenantaddress" required>
             </div>
           </div>
 
@@ -448,9 +466,10 @@ document.getElementById('toLeaseTerms').addEventListener('click', function() {
   const tenantData = new FormData(tenantForm);
 
   // Pass data to hidden fields in lease modal
-  document.getElementById('tenant_name_hidden').value = tenantData.get('name');
-  document.getElementById('address_hidden').value = tenantData.get('address');
-  document.getElementById('move_in_date_hidden').value = tenantData.get('moveindate');
+  document.getElementById('tenant_name_hidden').value = tenantData.get('tenantname');
+  document.getElementById('tenant_address_hidden').value = tenantData.get('tenantaddress');
+  document.getElementById('tenant_email_hidden').value = tenantData.get('tenantemail');
+  document.getElementById('tenant_phone_hidden').value = tenantData.get('tenantphone');
 
   // Hide Tenant Modal
   const tenantModalEl = document.getElementById('tenantModal');

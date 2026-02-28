@@ -62,9 +62,11 @@ def generate_commencement():
 @app.route("/generate-lease", methods=["POST"])
 def generate_lease():
 
-    name = request.form["name"]
-    address = request.form["address"]
-    moveindate = request.form["moveindate"]
+    tenantname = request.form["tenantname"]
+    tenantaddress = request.form["tenantaddress"]
+    tenantemail = request.form["tenantemail"]
+    tenantphone = request.form["tenantphone"]
+
     rent = request.form["rent"]
     startdate = request.form["startdate"]
     
@@ -75,9 +77,11 @@ def generate_lease():
         latex_content = file.read()
 
     # Replace placeholders
-    latex_content = latex_content.replace("{{NAME}}", name)
-    latex_content = latex_content.replace("{{ADDRESS}}", address)
-    latex_content = latex_content.replace("{{MOVEINDATE}}", moveindate)
+    latex_content = latex_content.replace("{{TENANTNAME}}", tenantname)
+    latex_content = latex_content.replace("{{TENANTADDRESS}}", tenantaddress)
+    latex_content = latex_content.replace("{{TENANTEMAIL}}", tenantemail)
+    latex_content = latex_content.replace("{{TTENANTPHONES}}", tenantphone)
+
     latex_content = latex_content.replace("{{RENT}}", rent)
     latex_content = latex_content.replace("{{STARTDATE}}", startdate)
     
