@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='/')
 
 # Folder where all LaTeX templates and dependencies live
 TEX_DIR = "latex_templates"
-MAIN_TEX_FILE = "template.tex"  # main LaTeX file inside TEX_DIR
+COMMENCEMENT_TEX_FILE = "addundum_commencement.tex"  # main LaTeX file inside TEX_DIR
 LEASE_TEX_FILE = "lease.tex"  # main LaTeX file inside TEX_DIR
 
 OUTPUT_FOLDER = "output"
@@ -17,29 +17,29 @@ def index():
 
 @app.route("/generate-commencement", methods=["POST"])
 def generate_commencement():
-    name = request.form["name"]
-    address = request.form["address"]
+    tenantname = request.form["tenantname"]
+    propertyaddress = request.form["propertyaddress"]
     moveindate = request.form["moveindate"]
     # Read the main LaTeX template
-    main_tex_path = os.path.join(TEX_DIR, MAIN_TEX_FILE)
+    main_tex_path = os.path.join(TEX_DIR, COMMENCEMENT_TEX_FILE)
     with open(main_tex_path, "r") as file:
         latex_content = file.read()
 
     # Replace placeholders
-    latex_content = latex_content.replace("{{NAME}}", name)
-    latex_content = latex_content.replace("{{ADDRESS}}", address)
-    latex_content = latex_content.replace("{{MOVEINDATE}}", moveindate)
+    latex_content = latex_content.replace("{{TENANTNAME}}", tenantname)
+    latex_content = latex_content.replace("{{PROPERTYADDRESS}}", propertyaddress)
+    latex_content = latex_content.replace("{{COMMENCEMENT}}", moveindate)
 
 
     # Create output tex file inside TEX_DIR
-    tex_filename = "output.tex"
+    tex_filename = COMMENCEMENT_TEX_FILE
     tex_path = os.path.join(TEX_DIR, tex_filename)
     with open(tex_path, "w") as file:
         file.write(latex_content)
 
     # Ensure output folder exists
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    pdf_path = os.path.join(OUTPUT_FOLDER, "output.pdf")
+    pdf_path = os.path.join(OUTPUT_FOLDER, "addundum_commencement.pdf")
 
     # Compile LaTeX to PDF **from TEX_DIR** so \input works
     result = subprocess.run(

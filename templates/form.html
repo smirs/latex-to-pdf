@@ -129,36 +129,60 @@ h1, h2, h3, h4, h5 {
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
 
-
-
         <div class="card" style="width: 20rem;">
-        <img src="/assets/img/lease.png" class="card-img-top" alt="residential lease template">
-        <div class="card-body">
+          <img src="/assets/img/lease.png" class="card-img-top" alt="residential lease template">
+
+          <div class="card-body">
             <h5 class="card-title">Residential Lease</h5>
-            <p class="card-text">Create a customized Missouri residential lease in minutes. Professionally formatted and ready for tenant signatures.</p>
+            <p class="card-text">
+              Create a customized Missouri residential lease in minutes.
+              Professionally formatted and ready for tenant signatures.
+            </p>
+
+            <div class="d-flex justify-content-between">
               <button 
-                class="btn btn-primary"
+                class="btn btn-primary w-50 me-2"
                 data-bs-toggle="modal"
                 data-bs-target="#tenantModal"
                 data-template="residential_lease">
                 Generate PDF
-            </button>
-        </div>
-        </div>
+              </button>
 
+              <a 
+                href="https://opropertiestl.com/assets/templates/previews/preview_template_lease.pdf"
+                target="_blank"
+                class="btn btn-outline-primary w-50">
+                Preview
+              </a>
+            </div>
+
+          </div>
+        </div>
 
         <div class="card" style="width: 20rem;">
         <img src="/assets/img/commencement.png" class="card-img-top" alt="commencement addundum">
         <div class="card-body">
             <h5 class="card-title">Commencement Addendum</h5>
             <p class="card-text">Clarify the lease start date and possession terms. Generate professional addendum that protects both landlord and tenant from timing disputes.</p>
+
+
+            <div class="d-flex justify-content-between">
               <button 
-                class="btn btn-primary"
+                class="btn btn-primary w-50 me-2"
                 data-bs-toggle="modal"
                 data-bs-target="#commencementModal"
                 data-template="commencement_addundum">
                 Generate PDF
-            </button>
+              </button>
+
+              <a 
+                href="https://opropertiestl.com/assets/templates/interactives/addundum_commencement.pdf"
+                target="_blank"
+                class="btn btn-outline-primary w-50">
+                Preview
+              </a>
+            </div>
+
         </div>
         </div>
 
@@ -584,9 +608,15 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       
+
       <div class="modal-header">
-        <h5 class="modal-title">Tenant Info</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title">Tenant Information</h5>
+          <button 
+              type="button" 
+              class="btn-close position-absolute top-0 end-0 m-3" 
+              data-bs-dismiss="modal"
+              aria-label="Close">
+          </button>
       </div>
 
       <form method="POST" action="/generate-commencement">
@@ -598,20 +628,21 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
           <div class="row">
 
 
-            <div class="col-md-6 mb-3">
-              <label>Tenant Name</label>
+            <div class="mb-3">
+              <label>Tenant Name(s)</label>
               <input type="text" class="form-control" name="tenantname" required>
             </div>
 
-            <div class="col-md-6 mb-3">
-              <label>Move-in Date</label>
+            <div class="mb-3">
+              <label>Property Address</label>
+              <input type="text" class="form-control" name="propertyaddress" required>
+            </div>
+
+            <div class="mb-3">
+              <label>Commencement Date</label>
               <input type="date" class="form-control" name="moveindate" required>
             </div>
 
-            <div class="col-md-6 mb-3">
-              <label>Address</label>
-              <input type="text" class="form-control" name="tenantaddress" required>
-            </div>
           </div>
 
         </div>
