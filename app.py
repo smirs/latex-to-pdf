@@ -65,14 +65,15 @@ def generate_lease():
 
     tenantname = request.form["tenantname"]
     tenantaddress = request.form["tenantaddress"]
-    tenantemail = request.form["tenantemail"]
-    tenantphone = request.form["tenantphone"]
+    landlordname = request.form["landlordname"]
+    landlordaddress = request.form["landlordaddress"]
 
     startdate = request.form["startdate"]
     enddate = request.form["enddate"]
     duration = request.form["duration"]
     moveindate = request.form["moveindate"]
     rent = request.form["rent"]
+    latefee = request.form["latefee"]
     securitydeposit = request.form["securitydeposit"]
     maxtenants = request.form["maxtenants"]
 
@@ -89,16 +90,18 @@ def generate_lease():
     # Replace placeholders
     latex_content = latex_content.replace("{{TENANTNAME}}", tenantname)
     latex_content = latex_content.replace("{{TENANTADDRESS}}", tenantaddress)
-    latex_content = latex_content.replace("{{TENANTEMAIL}}", tenantemail)
-    latex_content = latex_content.replace("{{TTENANTPHONES}}", tenantphone)
+    latex_content = latex_content.replace("{{LANDLORDNAME}}", landlordname)
+    latex_content = latex_content.replace("{{LANDLORDADDRESS}}", landlordaddress)
 
     latex_content = latex_content.replace("{{STARTDATE}}", startdate)
     latex_content = latex_content.replace("{{ENDDATE}}", enddate)
     latex_content = latex_content.replace("{{DURATION}}", duration)
     latex_content = latex_content.replace("{{COMMENCEMENT}}", moveindate)
     latex_content = latex_content.replace("{{RENT}}", rent)
+    latex_content = latex_content.replace("{{LATEFEE}}", latefee)
+
     latex_content = latex_content.replace("{{SECURITYDEPOSITE}}", securitydeposit)
-    latex_content = latex_content.replace("{{RMAXTENANTST}}", maxtenants)
+    latex_content = latex_content.replace("{{MAXTENANTS}}", maxtenants)
 
     latex_content = latex_content.replace("{{PROPERTYADDRESS}}", property_address)
     latex_content = latex_content.replace("{{STATE}}", state)

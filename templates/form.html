@@ -296,12 +296,25 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <div class="modal fade" id="tenantModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
 
-
+    <div class="wizard-progress">
+      <div>
+        <div class="wizard-step active">1</div>
+        <div class="wizard-label">Tenant</div>
+      </div>
+      <div>
+        <div class="wizard-step">2</div>
+        <div class="wizard-label">Lease</div>
+      </div>
+      <div>
+        <div class="wizard-step">3</div>
+        <div class="wizard-label">Property</div>
+      </div>
+    </div>
 
     <div class="modal-content">
 
         <div class="modal-header">
-            <h5 class="modal-title">Tenant Information</h5>
+            <h5 class="modal-title">Tenant-Landlord Info</h5>
             <button 
                 type="button" 
                 class="btn-close position-absolute top-0 end-0 m-3" 
@@ -314,27 +327,31 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
             <form id="tenantForm">
 
 
-            <div class="mb-3">
-                <label>Full Name(s)</label>
-                <input type="text" class="form-control" name="tenantname" required>
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <label>Tenant Full Name(s)</label>
+                <input type="text" class="form-control" name="tenantname" value="" required>
             </div>
 
-            <div class="mb-3">
-                <label>Current Address</label>
-                <input type="text" class="form-control" name="tenantaddress" required>
+            <div class="col-md-6 mb-3">
+                <label>Tenant Address</label>
+                <input type="text" class="form-control" name="tenantaddress" value="" required>
             </div>
+
+          </div>
 
 
           <div class="row">
 
             <div class="col-md-6 mb-3">
-                <label>Contact Email</label>
-                <input type="email" class="form-control" name="tenantemail" required>
+                <label>Landlord Full Name</label>
+                <input type="text" class="form-control" name="landlordname" value="" required>
             </div>
 
             <div class="col-md-6 mb-3">
-                <label>Contact Phone</label>
-                <input type="tel" class="form-control" name="tenantphone" required>
+                <label>Landlord Address</label>
+                <input type="text" class="form-control" name="landlordaddress" value="" required>
             </div>  
           </div>
 
@@ -352,7 +369,26 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- Modal 2: Lease Terms -->
 <div class="modal fade" id="leaseModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
+
+
+
+    <div class="wizard-progress">
+      <div>
+        <div class="wizard-step">1</div>
+        <div class="wizard-label">Tenant</div>
+      </div>
+      <div>
+        <div class="wizard-step active">2</div>
+        <div class="wizard-label">Lease</div>
+      </div>
+      <div>
+        <div class="wizard-step">3</div>
+        <div class="wizard-label">Property</div>
+      </div>
+    </div>
+
     <div class="modal-content">
+
 
         <div class="modal-header">
             <h5 class="modal-title">Lease Terms</h5>
@@ -367,16 +403,11 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
     <div class="modal-body">
         <form id="leaseForm" method="POST" action="/generate-lease">
-            <!-- Hidden inputs for tenant info -->
-            <input type="hidden" name="tenantname" id="tenant_name_hidden">
-            <input type="hidden" name="tenantaddress" id="tenant_address_hidden">
-            <input type="hidden" name="tenantemail" id="tenant_email_hidden">
-            <input type="hidden" name="tenantphone" id="tenant_phone_hidden">
 
 
             <div class="row">
 
-              <div class="col-md-6 mb-33">
+              <div class="col-md-6 mb-3">
                   <label>Max Number of Tenants</label>
                   <input type="number" class="form-control" name="maxtenants" value=1 required>
               </div>
@@ -396,27 +427,39 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
                   <input type="date" class="form-control" name="startdate" required>
               </div>
 
-              <div class="col-md-6 mb-33">
+              <div class="col-md-6 mb-3">
                   <label>Lease End Date</label>
                   <input type="date" class="form-control" name="enddate" required>
               </div>
 
-
-            
             </div>
 
 
             <div class="row">
-              <div class="col-md-6 mb-33">
+
+              <div class="col-md-6 mb-3">
                   <label>Monthly Rent ($)</label>
-                  <input type="number" class="form-control" name="rent" required>
+                  <input type="number" class="form-control" name="rent" value=1000 required>
               </div>
 
-              <div class="col-md-6 mb-33">
+              <div class="col-md-6 mb-3">
                   <label>Security Deposit ($)</label>
-                  <input type="number" class="form-control" name="securitydeposit" required>
+                  <input type="number" class="form-control" name="securitydeposit" value=1000 required>
               </div>
 
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <label>Move-In Date</label>
+                  <input type="date" class="form-control" name="moveindate" required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                  <label>Late Fee ($) [per day]</label>
+                  <input type="number" class="form-control" name="latefee" value=25 required>
+              </div>
 
             </div>
 
@@ -435,6 +478,24 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- Modal 3: Property Info -->
 <div class="modal fade" id="propertyModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
+
+
+
+    <div class="wizard-progress">
+      <div>
+        <div class="wizard-step">1</div>
+        <div class="wizard-label">Tenant</div>
+      </div>
+      <div>
+        <div class="wizard-step">2</div>
+        <div class="wizard-label">Lease</div>
+      </div>
+      <div>
+        <div class="wizard-step active">3</div>
+        <div class="wizard-label">Property</div>
+      </div>
+    </div>
+
     <div class="modal-content">
 
       <div class="modal-header">
@@ -455,8 +516,8 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
           <!-- Hidden Tenant Fields -->
           <input type="hidden" name="tenantname" id="final_tenant_name">
           <input type="hidden" name="tenantaddress" id="final_tenant_address">
-          <input type="hidden" name="tenantemail" id="final_tenant_email">
-          <input type="hidden" name="tenantphone" id="final_tenant_phone">
+          <input type="hidden" name="landlordname" id="final_landlord_name">
+          <input type="hidden" name="landlordaddress" id="final_landlord_address">
 
           <!-- Hidden Lease Fields -->
           <input type="hidden" name="startdate" id="final_startdate">
@@ -464,36 +525,37 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
           <input type="hidden" name="duration" id="final_duration">
           <input type="hidden" name="moveindate" id="final_moveindate">
           <input type="hidden" name="rent" id="final_rent">
+          <input type="hidden" name="latefee" id="final_late_fee">
           <input type="hidden" name="securitydeposit" id="final_securitydeposit">
           <input type="hidden" name="maxtenants" id="final_maxtenants">
 
           <!-- Visible Property Fields -->
           <div class="mb-3">
             <label class="form-label">Property Address</label>
-            <input type="text" class="form-control" name="property_address" required>
+            <input type="text" class="form-control" name="property_address" value="" required>
           </div>
 
           <div class="row">
             <div class="col-md-6 mb-3">
               <label class="form-label">City</label>
-              <input type="text" class="form-control" name="city" required>
+              <input type="text" class="form-control" name="city" value="" required>
             </div>
 
             <div class="col-md-6 mb-3">
               <label class="form-label">Zip Code</label>
-              <input type="text" class="form-control" name="zipcode" required>
+              <input type="text" class="form-control" name="zipcode" value="" required>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-6 mb-3">
               <label class="form-label">County</label>
-              <input type="text" class="form-control" name="county" required>
+              <input type="text" class="form-control" name="county" value="" required>
             </div>
 
             <div class="col-md-6 mb-3">
               <label class="form-label">State</label>
-              <input type="text" class="form-control" name="state" value="Missouri" required>
+              <input type="text" class="form-control" name="state" value="" required>
             </div>
           </div>
 
@@ -570,7 +632,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
 {# SCRIPTS START #}
 
-  // Tenant → Lease
+{# // Tenant → Lease #}
   <script>
   document.getElementById('toLeaseTerms').addEventListener('click', function() {
 
@@ -585,8 +647,8 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
       document.getElementById('final_tenant_name').value = tenantData.get('tenantname');
       document.getElementById('final_tenant_address').value = tenantData.get('tenantaddress');
-      document.getElementById('final_tenant_email').value = tenantData.get('tenantemail');
-      document.getElementById('final_tenant_phone').value = tenantData.get('tenantphone');
+      document.getElementById('final_landlord_name').value = tenantData.get('landlordname');
+      document.getElementById('final_landlord_address').value = tenantData.get('landlordaddress');
 
       bootstrap.Modal.getInstance(document.getElementById('tenantModal')).hide();
       new bootstrap.Modal(document.getElementById('leaseModal')).show();
@@ -609,6 +671,8 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
       document.getElementById('final_duration').value = leaseData.get('duration');
       document.getElementById('final_moveindate').value = leaseData.get('moveindate');
       document.getElementById('final_rent').value = leaseData.get('rent');
+      document.getElementById('final_late_fee').value = leaseData.get('latefee');
+
       document.getElementById('final_securitydeposit').value = leaseData.get('securitydeposit');
       document.getElementById('final_maxtenants').value = leaseData.get('maxtenants');
 
