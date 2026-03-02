@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1772478101.95305 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772478102.78391 2
+["pdflatex"] 1772481173.68481 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" "lease.pdf" "lease" 1772481174.48741 2
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772477956.71593 20195 2bc682c4246a4310799dedfca8487309 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/lease.tex" 1772481171.57863 20195 d42e1c852e13f8db015680ddfb8c9b2c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -89,11 +89,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
   "header_oproperties.tex" 1772478099.99126 1364 8cfc26b6ba77f6b8a4da09ac83305a18 ""
-  "lease.aux" 1772478102.69122 4307 edf17b7efc8ebed6e17099fbcadaefae "pdflatex"
-  "lease.out" 1772478102.69222 3029 0c0161913b3f6fef961a6369d73e663a "pdflatex"
-  "lease.tex" 1772477956.71593 20195 2bc682c4246a4310799dedfca8487309 ""
+  "lease.aux" 1772481174.39559 4307 edf17b7efc8ebed6e17099fbcadaefae "pdflatex"
+  "lease.out" 1772481174.39659 3029 0c0161913b3f6fef961a6369d73e663a "pdflatex"
+  "lease.tex" 1772481171.57863 20195 d42e1c852e13f8db015680ddfb8c9b2c ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
-  "newcommands.tex" 1772475506.75259 7252 9bed214a6c28307082f2af9ba433deef ""
+  "newcommands.tex" 1772481158.54082 7379 144bcb44ed1741f6afc54fec472d2375 ""
   (generated)
   "lease.aux"
   "lease.log"

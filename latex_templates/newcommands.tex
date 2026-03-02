@@ -162,6 +162,11 @@
   }%
 }
 
+\newcommand{\CuteBox}[1]{
+	\raisebox{-2pt}{
+	\TextField[name=#1, borderwidth=0, width=1cm, height=10pt, default={#1},]{}}%
+	}
+
 \newcommand{\SmallBox}[1]{
 	\raisebox{-2pt}{
 	\TextField[name=#1, borderwidth=0, width=2cm, height=10pt, default={#1},]{}}%
