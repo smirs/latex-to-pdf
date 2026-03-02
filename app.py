@@ -60,6 +60,7 @@ def generate_commencement():
     return send_file(pdf_path, as_attachment=True)
 
 @app.route("/generate-lease", methods=["POST"])
+
 def generate_lease():
 
     tenantname = request.form["tenantname"]
@@ -75,7 +76,10 @@ def generate_lease():
     securitydeposit = request.form["securitydeposit"]
     maxtenants = request.form["maxtenants"]
 
-    
+    property_address = request.form.get("property_address")
+    state = request.form.get("state")
+    city = request.form.get("city")
+    county = request.form.get("county")
     
     # Read the main LaTeX template
     main_tex_path = os.path.join(TEX_DIR, LEASE_TEX_FILE)
@@ -95,6 +99,11 @@ def generate_lease():
     latex_content = latex_content.replace("{{RENT}}", rent)
     latex_content = latex_content.replace("{{SECURITYDEPOSITE}}", securitydeposit)
     latex_content = latex_content.replace("{{RMAXTENANTST}}", maxtenants)
+
+    latex_content = latex_content.replace("{{PROPERTYADDRESS}}", property_address)
+    latex_content = latex_content.replace("{{STATE}}", state)
+    latex_content = latex_content.replace("{{CITY}}", city)
+    latex_content = latex_content.replace("{{COUNTY}}", county)
 
     # Create output tex file inside TEX_DIR
     tex_filename = "output_lease.tex"

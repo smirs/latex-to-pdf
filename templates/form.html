@@ -167,14 +167,14 @@ h1, h2, h3, h4, h5 {
 </section>
 
 
-<section id="faq"  data-aos="fade-up">
+{# <section id="faq"  data-aos="fade-up">
 <div class="container">
     <div class="section-title" data-aos="fade-up">
         <p><i class="bx bi-shield-check"></i> Secure Payment</p>
         <img src="/assets/img/payments.jpg" width="20%" class="img-fluid">
     </div>
 </div>
-</section>
+</section> #}
 
 </main>
 
@@ -295,36 +295,49 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- Modal 1: Tenant Info -->
 <div class="modal fade" id="tenantModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
+
+
+
     <div class="modal-content">
 
         <div class="modal-header">
-            <h5 class="modal-title">Tenant Info</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <h5 class="modal-title">Tenant Information</h5>
+            <button 
+                type="button" 
+                class="btn-close position-absolute top-0 end-0 m-3" 
+                data-bs-dismiss="modal"
+                aria-label="Close">
+            </button>
         </div>
 
         <div class="modal-body">
             <form id="tenantForm">
 
+
             <div class="mb-3">
-                <label>Tenant Full Name(s)</label>
+                <label>Full Name(s)</label>
                 <input type="text" class="form-control" name="tenantname" required>
             </div>
 
             <div class="mb-3">
-                <label>Tenant Address</label>
+                <label>Current Address</label>
                 <input type="text" class="form-control" name="tenantaddress" required>
             </div>
 
-            <div class="mb-3">
+
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
                 <label>Contact Email</label>
-                <input type="text" class="form-control" name="tenantemail" required>
+                <input type="email" class="form-control" name="tenantemail" required>
             </div>
 
-            <div class="mb-3">
+            <div class="col-md-6 mb-3">
                 <label>Contact Phone</label>
-                <input type="text" class="form-control" name="tenantphone" required>
+                <input type="tel" class="form-control" name="tenantphone" required>
             </div>  
-                
+          </div>
+
             </form>
         </div>
 
@@ -341,10 +354,15 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
-    <div class="modal-header">
-        <h5 class="modal-title">Lease Terms</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
+        <div class="modal-header">
+            <h5 class="modal-title">Lease Terms</h5>
+            <button 
+                type="button" 
+                class="btn-close position-absolute top-0 end-0 m-3" 
+                data-bs-dismiss="modal"
+                aria-label="Close">
+            </button>
+        </div>
 
 
     <div class="modal-body">
@@ -355,44 +373,56 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
             <input type="hidden" name="tenantemail" id="tenant_email_hidden">
             <input type="hidden" name="tenantphone" id="tenant_phone_hidden">
 
-            <div class="mb-3">
-                <label>Lease Start Date</label>
-                <input type="date" class="form-control" name="startdate" required>
+
+            <div class="row">
+
+              <div class="col-md-6 mb-33">
+                  <label>Max Number of Tenants</label>
+                  <input type="number" class="form-control" name="maxtenants" value=1 required>
+              </div>
+
+
+              <div class="col-md-6 mb-3">
+                  <label>Duration (months)</label>
+                  <input type="number" class="form-control" name="duration" value=12 required>
+              </div>
+            
             </div>
 
-            <div class="mb-3">
-                <label>Lease End Date</label>
-                <input type="date" class="form-control" name="enddate" required>
+            <div class="row">
+
+              <div class="col-md-6 mb-3">
+                  <label>Lease Start Date</label>
+                  <input type="date" class="form-control" name="startdate" required>
+              </div>
+
+              <div class="col-md-6 mb-33">
+                  <label>Lease End Date</label>
+                  <input type="date" class="form-control" name="enddate" required>
+              </div>
+
+
+            
             </div>
 
-            <div class="mb-3">
-                <label>Duration (months)</label>
-                <input type="number" class="form-control" name="duration" required>
-            </div>
 
-            <div class="mb-3">
-                <label>Move-in Date</label>
-                <input type="date" class="form-control" name="moveindate" required>
-            </div>
+            <div class="row">
+              <div class="col-md-6 mb-33">
+                  <label>Monthly Rent ($)</label>
+                  <input type="number" class="form-control" name="rent" required>
+              </div>
 
-            <div class="mb-3">
-                <label>Monthly Rent ($)</label>
-                <input type="number" class="form-control" name="rent" required>
-            </div>
+              <div class="col-md-6 mb-33">
+                  <label>Security Deposit ($)</label>
+                  <input type="number" class="form-control" name="securitydeposit" required>
+              </div>
 
-            <div class="mb-3">
-                <label>Security Deposit ($)</label>
-                <input type="number" class="form-control" name="securitydeposit" required>
-            </div>
 
-            <div class="mb-3">
-                <label>Max Number of Tenants</label>
-                <input type="number" class="form-control" name="maxtenants" required>
             </div>
-
 
             <div class="modal-footer">
-            <button type="submit" class="btn btn-success">Generate PDF</button>
+              <button type="button" class="btn btn-secondary" id="backToTenant">Back</button>
+              <button type="button" class="btn btn-primary" id="toPropertyInfo">Next</button>
             </div>
 
         </form>
@@ -401,7 +431,90 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     </div>
   </div>
 </div>
+
+<!-- Modal 3: Property Info -->
+<div class="modal fade" id="propertyModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+          <h5 class="modal-title">Property Information</h5>
+          <button 
+              type="button" 
+              class="btn-close position-absolute top-0 end-0 m-3" 
+              data-bs-dismiss="modal"
+              aria-label="Close">
+          </button>
+      </div>
+
+      <!-- 🔥 SINGLE FINAL FORM -->
+      <form method="POST" action="/generate-lease">
+
+        <div class="modal-body">
+
+          <!-- Hidden Tenant Fields -->
+          <input type="hidden" name="tenantname" id="final_tenant_name">
+          <input type="hidden" name="tenantaddress" id="final_tenant_address">
+          <input type="hidden" name="tenantemail" id="final_tenant_email">
+          <input type="hidden" name="tenantphone" id="final_tenant_phone">
+
+          <!-- Hidden Lease Fields -->
+          <input type="hidden" name="startdate" id="final_startdate">
+          <input type="hidden" name="enddate" id="final_enddate">
+          <input type="hidden" name="duration" id="final_duration">
+          <input type="hidden" name="moveindate" id="final_moveindate">
+          <input type="hidden" name="rent" id="final_rent">
+          <input type="hidden" name="securitydeposit" id="final_securitydeposit">
+          <input type="hidden" name="maxtenants" id="final_maxtenants">
+
+          <!-- Visible Property Fields -->
+          <div class="mb-3">
+            <label class="form-label">Property Address</label>
+            <input type="text" class="form-control" name="property_address" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control" name="city" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Zip Code</label>
+              <input type="text" class="form-control" name="zipcode" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">County</label>
+              <input type="text" class="form-control" name="county" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">State</label>
+              <input type="text" class="form-control" name="state" value="Missouri" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="backToLeaseTerms">Back</button>
+
+          <!-- 🔥 MUST BE submit -->
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
 {# LEASE ENDS #}
+
 
 
 {# COMMENCEMENT STARTS #}
@@ -456,61 +569,65 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
 
 {# SCRIPTS START #}
-<script>
-const tenantModal = document.getElementById('tenantModal')
 
-tenantModal.addEventListener('show.bs.modal', function (event) {
-  const button = event.relatedTarget
-  const templateType = button.getAttribute('data-template')
+  // Tenant → Lease
+  <script>
+  document.getElementById('toLeaseTerms').addEventListener('click', function() {
 
-  document.getElementById('templateType').value = templateType
-})
-</script>
+      const tenantForm = document.getElementById('tenantForm');
 
-<script>
-const leaseModal = document.getElementById('leaseModal')
+      if (!tenantForm.checkValidity()) {
+          tenantForm.reportValidity();
+          return;
+      }
 
-leaseModal.addEventListener('show.bs.modal', function (event) {
-  const button = event.relatedTarget
-  const templateType = button.getAttribute('data-template')
+      const tenantData = new FormData(tenantForm);
 
-  document.getElementById('templateType').value = templateType
-})
-</script>
+      document.getElementById('final_tenant_name').value = tenantData.get('tenantname');
+      document.getElementById('final_tenant_address').value = tenantData.get('tenantaddress');
+      document.getElementById('final_tenant_email').value = tenantData.get('tenantemail');
+      document.getElementById('final_tenant_phone').value = tenantData.get('tenantphone');
 
-<script>
-const commencementModal = document.getElementById('commencementModal')
+      bootstrap.Modal.getInstance(document.getElementById('tenantModal')).hide();
+      new bootstrap.Modal(document.getElementById('leaseModal')).show();
+  });
 
-commencementModal.addEventListener('show.bs.modal', function (event) {
-  const button = event.relatedTarget
-  const templateType = button.getAttribute('data-template')
+  // Lease → Property
+  document.getElementById('toPropertyInfo').addEventListener('click', function() {
 
-  document.getElementById('templateType').value = templateType
-})
-</script>
+      const leaseForm = document.getElementById('leaseForm');
 
-<script>
-document.getElementById('toLeaseTerms').addEventListener('click', function() {
-  // Get tenant form values
-  const tenantForm = document.getElementById('tenantForm');
-  const tenantData = new FormData(tenantForm);
+      if (!leaseForm.checkValidity()) {
+          leaseForm.reportValidity();
+          return;
+      }
 
-  // Pass data to hidden fields in lease modal
-  document.getElementById('tenant_name_hidden').value = tenantData.get('tenantname');
-  document.getElementById('tenant_address_hidden').value = tenantData.get('tenantaddress');
-  document.getElementById('tenant_email_hidden').value = tenantData.get('tenantemail');
-  document.getElementById('tenant_phone_hidden').value = tenantData.get('tenantphone');
+      const leaseData = new FormData(leaseForm);
 
-  // Hide Tenant Modal
-  const tenantModalEl = document.getElementById('tenantModal');
-  const tenantModal = bootstrap.Modal.getInstance(tenantModalEl);
-  tenantModal.hide();
+      document.getElementById('final_startdate').value = leaseData.get('startdate');
+      document.getElementById('final_enddate').value = leaseData.get('enddate');
+      document.getElementById('final_duration').value = leaseData.get('duration');
+      document.getElementById('final_moveindate').value = leaseData.get('moveindate');
+      document.getElementById('final_rent').value = leaseData.get('rent');
+      document.getElementById('final_securitydeposit').value = leaseData.get('securitydeposit');
+      document.getElementById('final_maxtenants').value = leaseData.get('maxtenants');
 
-  // Show Lease Modal
-  const leaseModalEl = document.getElementById('leaseModal');
-  const leaseModal = new bootstrap.Modal(leaseModalEl);
-  leaseModal.show();
-});
+      bootstrap.Modal.getInstance(document.getElementById('leaseModal')).hide();
+      new bootstrap.Modal(document.getElementById('propertyModal')).show();
+  });
+
+
+  // Back buttons
+  document.getElementById('backToTenant').addEventListener('click', function(){
+      bootstrap.Modal.getInstance(document.getElementById('leaseModal')).hide();
+      new bootstrap.Modal(document.getElementById('tenantModal')).show();
+  });
+
+  document.getElementById('backToLeaseTerms').addEventListener('click', function(){
+      bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide();
+      new bootstrap.Modal(document.getElementById('leaseModal')).show();
+  });
+
 </script>
 
 {# SCRIPTS END #}
