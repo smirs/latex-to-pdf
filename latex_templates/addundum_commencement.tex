@@ -9,19 +9,23 @@
 \usepackage{hyperref}
 
 \input{newcommands.tex} % <-- include your commands
-\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
-\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}
-\renewcommand{\Commencement}{{{COMMENCEMENT}}}
+\renewcommand{\TenantNames}{dd}  % tenant's full name
+\renewcommand{\PropertyAddress}{hh}
+\renewcommand{\Commencement}{2026-03-07}
 
 \begin{document}
 
+	\vspace{.1cm}
     \input{header_oproperties.tex}
 
 	\begin{center}
 		\centering \fbox{\huge \textcolor{red}{\textbf{Commencement Addendum}}}
 	\end{center}
+	
+	\vspace{.5cm}
+	\hfill \today
 
-\tenantinfo{}{}
+	\tenantinfo{}{}
 
 
 	\section{TERMS.}
