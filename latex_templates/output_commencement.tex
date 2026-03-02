@@ -1,0 +1,47 @@
+\documentclass[9pt]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+\input{newcommands.tex} % <-- include your commands
+\renewcommand{\TenantNames}{3453}  % tenant's full name
+\renewcommand{\PropertyAddress}{xx5756}
+\renewcommand{\Commencement}{2026-03-21}
+
+\begin{document}
+
+	\vspace{.1cm}
+    \input{header_oproperties.tex}
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Commencement Addendum}}}
+	\end{center}
+	
+	\vspace{.5cm}
+	\hfill \today
+
+	\begin{tabular}{ll}
+		Lessee Name(s): & \TenantBox{\TenantNames} \\
+		Property Address: & \TenantBox{\PropertyAddress}
+	\end{tabular}
+
+	\section{TERMS.}
+
+	The official commencement date of possession for the Property is hereby set as \DateBox{\Commencement}
+From this date forward:\\\\
+		\mycheckbox{resp1}{Tenant(s) acknowledge they are taking possession of the Property and assume full responsibility for adhering to all terms, conditions, and obligations outlined in the lease agreement and any addenda thereto.} \\\\
+		\mycheckbox{resp2}{Tenant(s) shall be fully responsible for the payment of rent, utilities, and any other fees stipulated in the lease agreement, starting from the commencement date.}\\\\
+		\mycheckbox{resp3}{Tenant(s) agree to abide by all rules, policies, and requirements specified in the lease agreement and its addenda, including but not limited to maintaining the Property, ensuring compliance with community regulations, and avoiding prohibited activities.}\\\\
+
+	By signing below, both parties confirm their agreement to this addendum.
+
+
+    \vfill
+	\input{acknowledge.tex}
+
+\end{document}

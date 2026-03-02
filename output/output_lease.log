@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  2 MAR 2026 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.24)  2 MAR 2026 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -563,7 +563,7 @@ onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb>
 Output written on /home/saeed-mirshekari/gitProjects/latex-to-pdf/output/output
-_lease.pdf (7 pages, 144730 bytes).
+_lease.pdf (7 pages, 144708 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  248 compressed objects within 3 object streams

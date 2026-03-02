@@ -6,8 +6,10 @@ app = Flask(__name__, static_url_path='/')
 
 # Folder where all LaTeX templates and dependencies live
 TEX_DIR = "latex_templates"
-COMMENCEMENT_TEX_FILE = "addundum_commencement.tex"  # main LaTeX file inside TEX_DIR
-LEASE_TEX_FILE = "lease.tex"  # main LaTeX file inside TEX_DIR
+
+# main text files (templates)
+LEASE_TEX_FILE = "lease.tex"  
+COMMENCEMENT_TEX_FILE = "addundum_commencement.tex"
 
 OUTPUT_FOLDER = "output"
 
@@ -32,14 +34,14 @@ def generate_commencement():
 
 
     # Create output tex file inside TEX_DIR
-    tex_filename = COMMENCEMENT_TEX_FILE
+    tex_filename = "output_commencement.tex"
     tex_path = os.path.join(TEX_DIR, tex_filename)
     with open(tex_path, "w") as file:
         file.write(latex_content)
 
     # Ensure output folder exists
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    pdf_path = os.path.join(OUTPUT_FOLDER, "addundum_commencement.pdf")
+    pdf_path = os.path.join(OUTPUT_FOLDER, "output_commencement.pdf")
 
     # Compile LaTeX to PDF **from TEX_DIR** so \input works
     result = subprocess.run(
@@ -56,6 +58,23 @@ def generate_commencement():
 
     if result.returncode != 0:
         return f"<h3>LaTeX compilation failed:</h3><pre>{result.stdout}\n{result.stderr}</pre>"
+
+    # Clean LaTeX byproducts
+    base_name = os.path.splitext(tex_filename)[0]
+    extensions_to_remove = [
+        ".aux",
+        ".log",
+        ".out",
+        ".toc",
+        ".fls",
+        ".fdb_latexmk",
+        ".synctex.gz"
+    ]
+
+    for ext in extensions_to_remove:
+        file_path = os.path.join(OUTPUT_FOLDER, base_name + ext)
+        if os.path.exists(file_path):
+            os.remove(file_path)
 
     return send_file(pdf_path, as_attachment=True)
 
