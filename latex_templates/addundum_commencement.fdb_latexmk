@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1772491184.76654 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/addundum_commencement.tex" "addundum_commencement.pdf" "addundum_commencement" 1772491185.23737 0
+["pdflatex"] 1772492051.144 "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/addundum_commencement.tex" "addundum_commencement.pdf" "addundum_commencement" 1772492051.72699 0
   "/etc/texmf/web2c/texmf.cnf" 1767044018.77868 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/addundum_commencement.tex" 1772491184.09034 1638 ef3d38cf4993bcc1f9b965529c8df3c4 ""
+  "/home/saeed-mirshekari/gitProjects/latex-to-pdf/latex_templates/addundum_commencement.tex" 1772492050.44785 1673 df23dbeaf9ab9942e288d66623f3f51c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -79,9 +79,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771946779.25332 271027 248f7302fbb430176f2096d0cdc9b14e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771946836 6927730 5f62edc2429465bfa61d52827896cc5f ""
   "acknowledge.tex" 1772131318.77365 645 dd6a861720d7d728c05256937d2b0983 ""
-  "addundum_commencement.aux" 1772491185.17331 794 734a2a8614cc936a0ab33b6684b4b003 "pdflatex"
-  "addundum_commencement.out" 1772491185.1743 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
-  "addundum_commencement.tex" 1772491184.09034 1638 ef3d38cf4993bcc1f9b965529c8df3c4 ""
+  "addundum_commencement.aux" 1772492051.65785 794 734a2a8614cc936a0ab33b6684b4b003 "pdflatex"
+  "addundum_commencement.out" 1772492051.65885 73 f92bc2537e772ce079be5bee78ff835f "pdflatex"
+  "addundum_commencement.tex" 1772492050.44785 1673 df23dbeaf9ab9942e288d66623f3f51c ""
   "header_oproperties.tex" 1772486587.26863 1364 8cfc26b6ba77f6b8a4da09ac83305a18 ""
   "logo.png" 1772131318.79993 5876 ec2b46e46929ec54071a75400663d32c ""
   "newcommands.tex" 1772486584.41733 7379 144bcb44ed1741f6afc54fec472d2375 ""
