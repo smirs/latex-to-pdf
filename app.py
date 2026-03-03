@@ -1,161 +1,44 @@
-import os
-import subprocess
 from flask import Flask, render_template, request, send_file
+from components.lease_generator import generate_lease_pdf
+from components.commencement_generator import generate_commencement_pdf
+from components.movein_generator import generate_movein_pdf
+from components.notice_generator import generate_notice_pdf
+import os
 
 app = Flask(__name__, static_url_path='/')
-
-# Folder where all LaTeX templates and dependencies live
-TEX_DIR = "latex_templates"
-
-# main text files (templates)
-LEASE_TEX_FILE = "lease.tex"  
-COMMENCEMENT_TEX_FILE = "addundum_commencement.tex"
-
-OUTPUT_FOLDER = "output"
+os.makedirs("output", exist_ok=True)
 
 @app.route("/")
 def index():
     return render_template("form.html")
 
-@app.route("/generate-commencement", methods=["POST"])
-def generate_commencement():
-    tenantname = request.form["tenantname"]
-    propertyaddress = request.form["propertyaddress"]
-    moveindate = request.form["moveindate"]
-    # Read the main LaTeX template
-    main_tex_path = os.path.join(TEX_DIR, COMMENCEMENT_TEX_FILE)
-    with open(main_tex_path, "r") as file:
-        latex_content = file.read()
-
-    # Replace placeholders
-    latex_content = latex_content.replace("{{TENANTNAME}}", tenantname)
-    latex_content = latex_content.replace("{{PROPERTYADDRESS}}", propertyaddress)
-    latex_content = latex_content.replace("{{COMMENCEMENT}}", moveindate)
-
-
-    # Create output tex file inside TEX_DIR
-    tex_filename = "output_commencement.tex"
-    tex_path = os.path.join(TEX_DIR, tex_filename)
-    with open(tex_path, "w") as file:
-        file.write(latex_content)
-
-    # Ensure output folder exists
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    pdf_path = os.path.join(OUTPUT_FOLDER, "output_commencement.pdf")
-
-    # Compile LaTeX to PDF **from TEX_DIR** so \input works
-    result = subprocess.run(
-        [
-            "pdflatex",
-            "-interaction=nonstopmode",
-            "-output-directory", os.path.abspath(OUTPUT_FOLDER),
-            tex_filename
-        ],
-        cwd=os.path.abspath(TEX_DIR),
-        capture_output=True,
-        text=True
-    )
-
-    if result.returncode != 0:
-        return f"<h3>LaTeX compilation failed:</h3><pre>{result.stdout}\n{result.stderr}</pre>"
-
-    # Clean LaTeX byproducts
-    base_name = os.path.splitext(tex_filename)[0]
-    extensions_to_remove = [
-        ".aux",
-        ".log",
-        ".out",
-        ".toc",
-        ".fls",
-        ".fdb_latexmk",
-        ".synctex.gz"
-    ]
-
-    for ext in extensions_to_remove:
-        file_path = os.path.join(OUTPUT_FOLDER, base_name + ext)
-        if os.path.exists(file_path):
-            os.remove(file_path)
-
-    return send_file(pdf_path, as_attachment=True)
-
 @app.route("/generate-lease", methods=["POST"])
+def lease():
+    success, result = generate_lease_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
-def generate_lease():
+@app.route("/generate-commencement", methods=["POST"])
+def commencement():
+    success, result = generate_commencement_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
-    tenantname = request.form["tenantname"]
-    tenantaddress = request.form["tenantaddress"]
-    landlordname = request.form["landlordname"]
-    landlordaddress = request.form["landlordaddress"]
+@app.route("/generate-movein", methods=["POST"])
+def movein():
+    success, result = generate_movein_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
-    startdate = request.form["startdate"]
-    enddate = request.form["enddate"]
-    duration = request.form["duration"]
-    moveindate = request.form["moveindate"]
-    rent = request.form["rent"]
-    latefee = request.form["latefee"]
-    securitydeposit = request.form["securitydeposit"]
-    maxtenants = request.form["maxtenants"]
-
-    property_address = request.form.get("property_address")
-    state = request.form.get("state")
-    city = request.form.get("city")
-    county = request.form.get("county")
-    
-    # Read the main LaTeX template
-    main_tex_path = os.path.join(TEX_DIR, LEASE_TEX_FILE)
-    with open(main_tex_path, "r") as file:
-        latex_content = file.read()
-
-    # Replace placeholders
-    latex_content = latex_content.replace("{{TENANTNAME}}", tenantname)
-    latex_content = latex_content.replace("{{TENANTADDRESS}}", tenantaddress)
-    latex_content = latex_content.replace("{{LANDLORDNAME}}", landlordname)
-    latex_content = latex_content.replace("{{LANDLORDADDRESS}}", landlordaddress)
-
-    latex_content = latex_content.replace("{{STARTDATE}}", startdate)
-    latex_content = latex_content.replace("{{ENDDATE}}", enddate)
-    latex_content = latex_content.replace("{{DURATION}}", duration)
-    latex_content = latex_content.replace("{{COMMENCEMENT}}", moveindate)
-    latex_content = latex_content.replace("{{RENT}}", rent)
-    latex_content = latex_content.replace("{{LATEFEE}}", latefee)
-
-    latex_content = latex_content.replace("{{SECURITYDEPOSITE}}", securitydeposit)
-    latex_content = latex_content.replace("{{MAXTENANTS}}", maxtenants)
-
-    latex_content = latex_content.replace("{{PROPERTYADDRESS}}", property_address)
-    latex_content = latex_content.replace("{{STATE}}", state)
-    latex_content = latex_content.replace("{{CITY}}", city)
-    latex_content = latex_content.replace("{{COUNTY}}", county)
-
-    # Create output tex file inside TEX_DIR
-    tex_filename = "output_lease.tex"
-    tex_path = os.path.join(TEX_DIR, tex_filename)
-    with open(tex_path, "w") as file:
-        file.write(latex_content)
-
-    # Ensure output folder exists
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    pdf_path = os.path.join(OUTPUT_FOLDER, "output_lease.pdf")
-
-    # Compile LaTeX to PDF **from TEX_DIR** so \input works
-    result = subprocess.run(
-        [
-            "pdflatex",
-            "-interaction=nonstopmode",
-            "-output-directory", os.path.abspath(OUTPUT_FOLDER),
-            tex_filename
-        ],
-        cwd=os.path.abspath(TEX_DIR),
-        capture_output=True,
-        text=True
-    )
-
-    if result.returncode != 0:
-        return f"<h3>LaTeX compilation failed:</h3><pre>{result.stdout}\n{result.stderr}</pre>"
-
-    return send_file(pdf_path, as_attachment=True)
+@app.route("/generate-notice", methods=["POST"])
+def notice():
+    success, result = generate_notice_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
 if __name__ == "__main__":
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     app.run(debug=True, host="0.0.0.0", port=5000)
-

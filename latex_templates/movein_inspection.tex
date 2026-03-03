@@ -1,0 +1,178 @@
+\documentclass[9pt]{article}
+\usepackage[top=0.75in, bottom=2.15in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+
+% New commands defined
+
+\input{newcommands.tex} % <-- include your commands
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}
+\renewcommand{\Commencement}{{{MOVEINDATE}}}
+
+
+
+\begin{document}
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Move-In Inspection Checklist}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	
+	% --- Instructions ---
+	\section*{Instructions.}
+	% ... your instructions here ...
+	Please carefully inspect the condition of the property and its features at the time of move-in. Use the checklist below to document the condition of each item, noting any existing damages, issues, or concerns. This information will be used as a reference for the condition of the property at move-in and may be referenced at move-out.\\
+	
+	% --- Property Info Box ---
+	\vspace{2.5cm}
+	\noindent
+	\fbox{%
+		\begin{minipage}{\textwidth}
+			\vspace{0.2cm}
+			\textbf{Property Address:} \BigBox{\PropertyAddress} 
+			\vspace{0.2cm}\\
+			\textbf{Tenant Name:} \BigBox{\TenantNames}
+			\vspace{0.2cm}\\
+			\textbf{Commencement Date:} \BigBox{\Commencement}
+			\vspace{0.2cm}
+		\end{minipage}%
+	}
+
+
+	\newpage
+	\begin{Form}
+		
+	\section{INTERIOR SPACE.}
+	
+		% ---------------- KITCHEN ----------------
+		\subsection{Kitchen}
+		\itemrow{kit1}{Walls clean, no holes or damage}{notes-kit1}
+		\itemrow{kit2}{Ceiling clean, no stains or cracks}{notes-kit2}
+		\itemrow{kit3}{Flooring in good condition}{}		
+		\itemrow{kit4}{Sink and faucet working, no leaks}{notes-kit4}
+		\itemrow{kit5}{Garbage disposal working}{notes-kit5}
+		\itemrow{kit6}{Cabinets and drawers functional}{notes-kit6}
+		\itemrow{kit7}{Counter-tops in good condition}{notes-kit7}
+		\itemrow{kit8}{Refrigerator clean and working}{notes-kit8}
+		\itemrow{kit9}{Stove/Oven working}{notes-kit9}
+		\itemrow{kit10}{Microwave working}{notes-kit10}
+		\itemrow{kit11}{Exhaust hood/fan working}{notes-kit11}
+		\itemrow{kit12}{Dishwasher working}{notes-kit12}
+		\itemrow{kit13}{Lights, outlets, and fans working}{notes-kit13}	
+		
+		\subsection{Living Room}
+		
+		\itemrow{liv1}{Walls clean, no holes or damage}{notes-liv1}
+		\itemrow{liv2}{Ceiling clean, no stains or cracks}{notes-liv2}
+		\itemrow{liv3}{Flooring in good condition}{notes-liv3}
+		\itemrow{liv4}{The main-entrance lock is working}{notes-liv4}
+		\itemrow{liv5}{Windows, doors, and blinds working}{notes-liv5}
+		\itemrow{liv6}{Lights, outlets, and fans working}{notes-liv6}	
+
+		
+		% ---------------- MAIN BEDROOM ----------------
+		\subsection{Main Bedroom}
+		
+		\itemrow{mbed1}{Walls clean, no holes or damage}{notes-mbed1}
+		\itemrow{mbed2}{Ceiling clean, no stains or cracks}{notes-mbed2}
+		\itemrow{mbed3}{Flooring in good condition}{notes-mbed3}
+		\itemrow{mbed4}{Closet doors and shelves functional}{notes-mbed4}
+		\itemrow{mbed5}{Windows and blinds working}{notes-mbed5}
+		\itemrow{mbed6}{Lights, outlets, and fans working}{notes-mbed6}	
+		
+		% ---------------- MAIN BATHROOM ----------------
+		\subsection{Main Bathroom}
+
+		\itemrow{mbath1}{Walls clean, no holes or damage}{notes-mbath1}
+		\itemrow{mbath2}{Ceiling clean, no stains or cracks}{notes-mbath2}
+		\itemrow{mbath3}{Flooring in good condition}{notes-mbath3}
+		\itemrow{mbath4}{Toilet flushes properly}{notes-mbath4}
+		\itemrow{mbath5}{Sink and faucet working}{notes-mbath5}
+		\itemrow{mbath6}{Shower/Tub draining properly}{notes-mbath6}
+		\itemrow{mbath7}{No leaks under sink}{notes-mbath7}
+		\itemrow{mbath8}{Mirror and fixtures intact}{notes-mbath8}
+		\itemrow{mbath9}{Exhaust fan working}{notes-mbath9}
+		\itemrow{mbath10}{Lights and outlet(s) working}{notes-mbath10}			
+		% ---------------- GUEST BEDROOM ----------------
+		\subsection{Guest Bedroom}
+		
+		\itemrow{gbed1}{Walls clean, no holes or damage}{notes-gbed1}
+		\itemrow{gbed2}{Ceiling clean, no stains or cracks}{notes-gbed2}
+		\itemrow{gbed3}{Flooring in good condition}{notes-gbed3}
+		\itemrow{gbed4}{Closet doors and shelves functional}{notes-gbed4}
+		\itemrow{gbed5}{Windows and blinds working}{notes-gbed5}
+		\itemrow{gbed6}{Lights, outlets, and fans working}{notes-gbed6}
+		
+		% ---------------- GUEST BATHROOM ----------------
+		\subsection{Guest Bathroom}
+		\itemrow{gbath1}{Walls clean, no holes or damage}{notes-gbath1}
+		\itemrow{gbath2}{Ceiling clean, no stains or cracks}{notes-gbath2}
+		\itemrow{gbath3}{Flooring in good condition}{notes-gbath3}		
+		\itemrow{gbath4}{Toilet flushes properly}{notes-gbath4}
+		\itemrow{gbath5}{Sink and faucet working}{notes-gbath5}
+		\itemrow{gbath6}{Shower/Tub draining properly}{notes-gbath6}
+		\itemrow{gbath7}{No leaks under sink}{notes-gbath7}
+		\itemrow{gbath8}{Mirror and fixtures intact}{notes-gbath8}
+		\itemrow{gbath9}{Exhaust fan working}{notes-gbath9}
+		\itemrow{gbath10}{Lights and outlet(s) working}{notes-gbath10}			
+				
+		% ---------------- LAUNDRY AREA ----------------
+		\subsection{Laundry Area}
+		
+		\itemrow{lau1}{Washer operational (electric)}{notes-lau1}
+		\itemrow{lau2}{Dryer operational (electric)}{notes-lau2}
+		\itemrow{lau3}{Water heater operational (electric)}{notes-lau3}
+		\itemrow{lau4}{Furnace operational (gas)}{notes-lau4}
+		\itemrow{lau5}{No leaks or unusual noises}{notes-lau5}
+		
+		\newpage
+		\section{EXTERIOR SPACE.}
+		
+				% ---------------- BALCONY & STORAGE ----------------
+		\subsection{Balcony Deck and Storage Room}
+		
+		\itemrow{bal1}{Balcony floor in good condition}{notes-bal1}
+		\itemrow{bal2}{Balcony railing in good condition}{notes-bal2}
+		\itemrow{bal3}{Sliding door and lock working}{notes-bal3}
+		\itemrow{bal4}{Storage room clean and functional}{notes-bal4}	
+		
+		% ---------------- EXTERIOR HALLWAY ----------------
+		\subsection{Exterior Hallway (Common Area Outside Unit)}
+		
+		\itemrow{ext1}{Area clean and free of debris}{notes-ext1}
+		\itemrow{ext2}{No damage to walls or flooring}{notes-ext2}
+		\itemrow{ext3}{Lighting functional}{notes-ext3}
+		
+		% ---------------- CARPORT SPACE ----------------
+		\subsection{Carport Space}
+		
+		\itemrow{car1}{Assigned carport number clearly marked}{notes-car1}
+		\itemrow{car2}{Carport area clean and free of debris}{notes-car2}
+		\itemrow{car3}{No oil stains or hazardous spills present}{notes-car3}
+		\itemrow{car4}{Structure and posts in good condition}{notes-car4}
+		
+	\end{Form}
+	
+	\newpage
+	% --- push the following content to the bottom ---
+
+	\vspace{1cm}
+	
+	\section*{GENERAL NOTES.}
+	Please use the space below to provide any additional comments or observations about the condition of the unit that were not covered in the checklist above. This can include any concerns about safety, cleanliness, or maintenance issues that you would like to bring to the attention of property management.\\
+	\vspace{1cm}\\
+	\TextField[name=4, multiline=true,width=\linewidth,height=10\baselineskip,]{}
+
+	\input{acknowledge.tex}
+
+\end{document}
