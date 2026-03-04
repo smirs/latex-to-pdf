@@ -1,0 +1,58 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+
+% New commands defined
+\input{newcommands.tex}
+\input{header_oproperties.tex}
+
+\renewcommand{\TenantNames}{sas}  % tenant's full name
+\renewcommand{\PropertyAddress}{as}  % property address
+
+\renewcommand{\lostkeyfee}{32}  % fee for lost keys
+\renewcommand{\maxkeyfee}{111}  % maximum fee for key replacement	
+
+\renewcommand{\numkeyfront}{1}  % number of front door keys
+\renewcommand{\numkeymailbox}{2}  % number of mailbox keys
+\renewcommand{\numkeypool}{0}  % number of pool access keys
+\renewcommand{\numkeyother}{0}  % number of other keys
+
+
+\setlength{\parindent}{0pt}  % remove all paragraph indentation
+
+\begin{document}
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Keys Addendum}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	\tenantinfo{}{}
+
+	\section{TERMS.}
+	Lessee(s) acknowledge(s) receipt of the following keys for the above location.\\
+	
+
+	\mycheckbox{key1}{front door keys} (\TinyBox{\numkeyfront} Copies)\\
+	\mycheckbox{key2}{mailbox keys} (\TinyBox{\numkeymailbox} Copies)\\
+	\mycheckbox{key3}{pool access keys} (\TinyBox{\numkeypool} Copies)\\
+	\mycheckbox{key5}{other keys} (\TinyBox{\numkeyother} Copies)\\
+
+	The Lessee(s) shall not change, reproduce or add any keys and/or locks without the express prior permission of the Lessor. The Lessee(s) shall provide the Lessor with copies of every key for the Lessee’s apartment.	If the Lessee(s) shall lose the keys to the apartment, then s/he shall be responsible for a fee of \DateBox{\$\lostkeyfee}, plus the cost of replacement keys or locksmith charges. If keys are not returned at the time Lessee(s) vacate(s) the property, there will be a \DateBox{\$\maxkeyfee} charge for each key replacement. The Lessee(s) understand(s) that the keys mentioned above are for the Lessee(s) use only. Smart Lock: Tenant acknowledges the use of a smart lock on the main entrance of the condo and agrees to comply with provided instructions for its use. Tenants shall not tamper with or modify the lock and must report any issues or malfunctions immediately to the landlord.
+
+
+	\input{acknowledge.tex}
+
+\end{document}

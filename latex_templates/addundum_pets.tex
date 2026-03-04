@@ -1,0 +1,56 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+
+% New commands defined
+\input{newcommands.tex}
+\input{header_oproperties.tex}
+
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\PetDeposit}{{{PETDEPOSIT}}}  % pet deposit amount
+\renewcommand{\MaxPetsAllowed}{{{MAXPETSALLOWED}}}  % maximum number of pets allowed
+
+
+
+
+\setlength{\parindent}{0pt}  % remove all paragraph indentation
+
+\begin{document}
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Pets Addendum}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	\tenantinfo{}{}
+
+	\section{TERMS.}
+	Tenant(s) agree to pay a non-refundable deposit of \CuteBox{\$\PetDeposit} per pet, payable at the time this addendum is executed. This deposit is intended to cover cleaning or repairs related to the presence of the pet(s).
+	Tenant(s) are fully responsible for any and all damages to the property caused by the pet(s). This includes, but is not limited to:
+	Damage to flooring, walls, doors, or fixtures.
+	Staining, odors, or excessive pet hair requiring specialized cleaning.
+	Damage to landscaping, outdoor areas, or common spaces.
+	If damages caused by the pet(s) exceed the deposit amount, Tenant(s) agree to reimburse the Landlord for the full cost of repairs or cleaning required to restore the property to its original condition.\\
+
+	\mycheckbox{pet1}{Tenant(s) agree to maintain their pet(s) in a clean and healthy condition. Pets must not cause nuisance, excessive noise, or disturbances to neighbors.}\\
+	\mycheckbox{pet2}{Tenant(s) agree to keep no more than \TinyBox{\MaxPetsAllowed} pets on the property at any time. Violation of this provision may result in additional charges, termination of this agreement, or both.}\\
+	\mycheckbox{pet3}{Tenant(s) agree to comply with all applicable local laws, ordinances, and regulations regarding the care and control of their pet(s).}\\
+	\mycheckbox{pet4}{Tenant(s) agree to indemnify and hold harmless the Landlord from any claims, damages, or liabilities arising from the pet(s).}\\
+
+	\input{acknowledge.tex}
+
+\end{document}

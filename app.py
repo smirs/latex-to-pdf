@@ -3,6 +3,9 @@ from components.lease_generator import generate_lease_pdf
 from components.commencement_generator import generate_commencement_pdf
 from components.movein_generator import generate_movein_pdf
 from components.notice_generator import generate_notice_pdf
+from components.keys_generator import generate_keys_pdf
+from components.pets_generator import generate_pets_pdf
+
 import os
 
 app = Flask(__name__, static_url_path='/')
@@ -11,6 +14,20 @@ os.makedirs("output", exist_ok=True)
 @app.route("/")
 def index():
     return render_template("form.html")
+
+@app.route("/generate-pets", methods=["POST"])
+def pets():
+    success, result = generate_pets_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
+
+@app.route("/generate-keys", methods=["POST"])
+def keys():
+    success, result = generate_keys_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
 @app.route("/generate-lease", methods=["POST"])
 def lease():

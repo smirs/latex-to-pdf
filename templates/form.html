@@ -217,8 +217,68 @@ h1, h2, h3, h4, h5 {
         </div>
         </div>
 
+      <div class="card" style="width: 20rem;">
+        <img src="/assets/img/keys.png" class="card-img-top" alt="residential lease template">
+
+        <div class="card-body">
+          <h5 class="card-title">Keys Addendum</h5>
+          <p class="card-text">
+            Specify key policies, fees, and responsibilities with a professional addendum. Protect your property and clarify expectations for tenants.
+          </p>
+
+        <div class="d-flex flex-column flex-md-row gap-2">
+          <button 
+            class="btn btn-primary w-100 w-md-50"
+            data-bs-toggle="modal"
+            data-bs-target="#keysModal"
+            data-template="keys_addendum">
+
+            Generate PDF
+          </button>
+
+          <button 
+            class="btn btn-outline-secondary w-100 w-md-50">
+            <a 
+                href="https://opropertiestl.com/assets/templates/previews/preview_template_lease.pdf"
+                target="_blank">                Preview
+            </a>
+          </button>
+        </div>
+        </div>
+        </div>
 
 
+      <div class="card" style="width: 20rem;">
+        <img src="/assets/img/pets.png" class="card-img-top" alt="residential lease template">
+
+        <div class="card-body">
+          <h5 class="card-title">Pets Addendum</h5>
+          <p class="card-text">
+            Set clear pet policies and protect your property with a professional pets addendum. Customize terms for pet deposits, allowed pets, and more.
+          </p>
+
+        <div class="d-flex flex-column flex-md-row gap-2">
+          <button 
+            class="btn btn-primary w-100 w-md-50"
+            data-bs-toggle="modal"
+            data-bs-target="#petsModal"
+            data-template="Pets_addendum"
+            data-title="Pets Addendum">
+
+            Generate PDF
+          </button>
+
+          <button 
+            class="btn btn-outline-secondary w-100 w-md-50">
+            <a 
+                href="https://opropertiestl.com/assets/templates/previews/preview_template_lease.pdf"
+                target="_blank">                Preview
+            </a>
+          </button>
+        </div>
+        </div>
+        </div>
+        
 
       </div>
 </div>
@@ -346,7 +406,6 @@ src="https://c.statcounter.com/13207937/0/3ebf4a68/1/"
 alt="site stats"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-
 
 
 {# LEASE STARTS #}
@@ -693,6 +752,160 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 {# MOVEIN ENDS #}
 
 
+{# PETS STARTS #}
+<div class="modal fade" id="petsModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+
+      <div class="modal-header">
+          <h5 class="modal-title">Pets Information</h5>
+          <button 
+              type="button" 
+              class="btn-close position-absolute top-0 end-0 m-3" 
+              data-bs-dismiss="modal"
+              aria-label="Close">
+          </button>
+      </div>
+
+      <form method="POST" action="/generate-pets">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+
+
+            <div class="mb-3">
+              <label>Tenant Name(s)</label>
+              <input type="text" class="form-control" name="tenantname" required>
+            </div>
+
+            <div class="mb-3">
+              <label>Property Address</label>
+              <input type="text" class="form-control" name="propertyaddress" required>
+            </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Pet Deposit ($)</label>
+              <input type="number" class="form-control" name="petdeposit" required>
+            </div>  
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Max Pets Allowed</label>
+              <input type="number" class="form-control" name="maxpetsallowed" required>
+            </div> 
+          </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# PETS ENDS #}
+
+
+{# KEYS STARTS #}
+<div class="modal fade" id="keysModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+
+      <div class="modal-header">
+          <h5 class="modal-title">Tenant Information</h5>
+          <button 
+              type="button" 
+              class="btn-close position-absolute top-0 end-0 m-3" 
+              data-bs-dismiss="modal"
+              aria-label="Close">
+          </button>
+      </div>
+
+      <form method="POST" action="/generate-keys">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+
+
+            <div class="mb-3">
+              <label>Tenant Name(s)</label>
+              <input type="text" class="form-control" name="tenantname" required>
+            </div>
+
+            <div class="mb-3">
+              <label>Property Address</label>
+              <input type="text" class="form-control" name="propertyaddress" required>
+            </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Lost Key Fee ($)</label>
+              <input type="text" class="form-control" name="lostkeyfee" required>
+            </div>  
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Max Key Fee ($)</label>
+              <input type="text" class="form-control" name="maxkeyfee" required>
+            </div> 
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Front Door Keys</label>
+              <input type="text" class="form-control" name="numkeyfront" required>
+            </div>  
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Mailbox Keys</label>
+              <input type="text" class="form-control" name="numkeymailbox" required>
+            </div> 
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Pool Access Keys</label>
+              <input type="text" class="form-control" name="numkeypool" required>
+            </div>  
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Other Keys</label>
+              <input type="text" class="form-control" name="numkeyother" required>
+            </div> 
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# KEYS ENDS #}
+
+
+
 {# COMMENCEMENT STARTS #}
 <div class="modal fade" id="commencementModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
@@ -813,6 +1026,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
       bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide();
       new bootstrap.Modal(document.getElementById('leaseModal')).show();
   });
+
 
 </script>
 
