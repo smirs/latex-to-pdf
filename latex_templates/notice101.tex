@@ -13,10 +13,17 @@
 \usepackage{fancyhdr}
 \usepackage{fp}  % floating point calculations
 \usepackage{pgfcalendar} % for date calculations
-% New commands defined
+\usepackage{amsmath}
+\usepackage{siunitx}
+\include{newcommands.tex}
+\include{header_notices.tex}
 
-\include{./src/newcommands.tex}
-\include{./src/header_notices.tex}
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\ManagerName}{{{MANAGERNAME}}}  % property manager's full name
+\renewcommand{\ManagerPhone}{{{MANAGERPHONE}}}  % property manager phone number
+\renewcommand{\ManagerEmail}{{{MANAGEREMAIL}}}  % property manager email address
 
 \setlength{\parindent}{0pt}  % remove all paragraph indentation
 
@@ -54,6 +61,6 @@
     Please report the maintenance issue to the property manager within 5 days of receiving this notice. Failure to report the issue may result in a fine of \PenaltyFine~per day until the issue is reported. You can report the issue by contacting the property manager at \ManagerPhone~or \ManagerEmail.
 
 
-	\input{./src/propmanager_signature.tex}
+	\input{propmanager_signature.tex}
 
 \end{document}

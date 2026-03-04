@@ -3,7 +3,7 @@ import subprocess
 
 OUTPUT_FOLDER = "output"
 TEX_DIR = "latex_templates"
-NOTICE_TEX_FILE = "notice.tex"
+NOTICE_TEX_FILE = "notice101.tex"
 
 def generate_notice_pdf(form_data):
     with open(os.path.join(TEX_DIR, NOTICE_TEX_FILE), "r") as f:
@@ -12,8 +12,9 @@ def generate_notice_pdf(form_data):
     placeholders = {
         "{{TENANTNAME}}": form_data.get("tenantname", ""),
         "{{PROPERTYADDRESS}}": form_data.get("propertyaddress", ""),
-        "{{NOTICEDATE}}": form_data.get("noticedate", ""),
-        "{{NOTICETYPE}}": form_data.get("noticetype", "")
+        "{{MANAGERNAME}}": form_data.get("managername", ""),
+        "{{MANAGERPHONE}}": form_data.get("managerphone", ""),
+        "{{MANAGEREMAIL}}": form_data.get("manageremail", "")
     }
 
     for k, v in placeholders.items():

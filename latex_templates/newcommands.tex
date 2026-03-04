@@ -53,8 +53,9 @@
 \newcommand{\discount}{0.00}  % discount amount for early payment
 
 %####### Property Manager 
-\newcommand{\ManagerPhone}{(687) 546-7665}
-\newcommand{\ManagerEmail}{jacob.white@gmail.com}	
+\newcommand{\ManagerName}{Mark Smith} % property manager's full name
+\newcommand{\ManagerPhone}{(687) 546-7665} % property manager phone number
+\newcommand{\ManagerEmail}{jacob.white@gmail.com}	 % property manager email address
 
 
 %####### Keys
@@ -83,6 +84,7 @@
 \newcount\StartDateCount
 \newcount\PreLeaseDuration
 
+
 \newcommand{\ComputePreLeaseDays}{%
   \pgfcalendardatetojulian{\Commencement}{\CommencementCount}%
   \pgfcalendardatetojulian{\LeaseStart}{\StartDateCount}%
@@ -95,21 +97,20 @@
 }
 
 \newcommand{\DueAmount}{%
-  \num{\fpeval{round(\DailyRent * \number\PreLeaseDuration, 2)}}
+  \fpeval{round(\DailyRent * \PreLeaseDuration, 2)}
 }
 
+
 \newcommand{\TotalPaymentDayOne}{%
-  \num{
 	\fpeval{
     round(
-      round(\DailyRent * \number\PreLeaseDuration, 2)
+      round(\DailyRent * \PreLeaseDuration, 2)
       + \SecurityDeposit
       + \Rent
 	  + \TotalPetDeposit
 	  + \OtherFees
     , 2)
   	}
-  }%
 }
 
 
@@ -250,6 +251,6 @@
   \begin{tabular}{@{}l l l@{}}
     Tenant(s): 			    & \BigMidBox{\TenantNames} 		  & \mycheckbox{info}{Informational / Administrative Notices} \\
     Property Address: 	& \BigMidBox{\PropertyAddress} 	& \mycheckbox{compliance}{Compliance / Cure Notices} \\
-    Property Manager: 	& \BigMidBox{\LandlordName}   	& \mycheckbox{enforcement}{Enforcement / Legal Notices}\\
+    Property Manager: 	& \BigMidBox{\ManagerName}   	  & \mycheckbox{enforcement}{Enforcement / Legal Notices}\\
   \end{tabular}%
 }

@@ -8,6 +8,10 @@ from components.pets_generator import generate_pets_pdf
 from components.maintenanance_generator import generate_maintenance_pdf
 from components.parking_generator import generate_parking_pdf
 from components.utilities_generator import generate_utilities_pdf
+from components.proration_generator import generate_proration_pdf
+from components.total_payday1_generator import generate_payments_day1_pdf
+from components.repair_request_generator import generate_repair_request_pdf
+
 
 import os
 
@@ -17,6 +21,34 @@ os.makedirs("output", exist_ok=True)
 @app.route("/")
 def index():
     return render_template("form.html")
+
+@app.route("/generate-repair-request", methods=["POST"])
+def repair_request():
+    success, result = generate_repair_request_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
+
+@app.route("/generate-notice", methods=["POST"])
+def notice():
+    success, result = generate_notice_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
+
+@app.route("/generate-payments-day1", methods=["POST"])
+def payments_day1():
+    success, result = generate_payments_day1_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
+
+@app.route("/generate-proration", methods=["POST"])
+def proration():
+    success, result = generate_proration_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
 @app.route("/generate-utilities", methods=["POST"])
 def utilities():
@@ -74,12 +106,6 @@ def movein():
         return f"<h3>Error:</h3><pre>{result}</pre>"
     return send_file(result, as_attachment=True)
 
-@app.route("/generate-notice", methods=["POST"])
-def notice():
-    success, result = generate_notice_pdf(request.form)
-    if not success:
-        return f"<h3>Error:</h3><pre>{result}</pre>"
-    return send_file(result, as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

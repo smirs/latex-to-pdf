@@ -13,10 +13,19 @@
 \usepackage{fancyhdr}
 \usepackage{fp}  % floating point calculations
 \usepackage{pgfcalendar} % for date calculations
-% New commands defined
+\usepackage{siunitx}
+\usepackage{amsmath}
 
-\include{./src/newcommands.tex}
-\include{./src/header_oproperties.tex}
+
+\input{newcommands.tex}
+\input{header_oproperties.tex}
+
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\Commencement}{{{COMMENCEMENT}}}  % lease commencement date
+\renewcommand{\LeaseStart}{{{LEASESTART}}}  % lease start date
+\renewcommand{\Rent}{{{RENT}}}  % monthly rent amount		
 
 \setlength{\parindent}{0pt}  % remove all paragraph indentation
 
@@ -35,22 +44,23 @@
 	\tenantinfo{}{}
 
 	\section{PURPOSE.}
-	The purpose of this Addendum is to outline the proration of rent for the period from \DateBox{\Commencement}, to \DateBox{\LeaseStart}, based on the monthly rent of \SmallBox{\$\Rent}. 
+	The purpose of this Addendum is to clarify the proration of rent for a \CuteBox{\the\PreLeaseDuration} days in the time period from the moving-in date of \DateBox{\Commencement} to the start date of the lease on \DateBox{\LeaseStart}. 
 
 	\section{PRORATION CALCULATION.}
-	The prorated rent amount is calculated by multiplying the daily rent by the number of days in the proration period, which is \SmallBox{\$\DailyRent} multiplied by \TinyBox{\the\PreLeaseDuration} days from \DateBox{\Commencement} to \DateBox{\LeaseStart}. The resulting prorated rent amount is \DateBox{\$\DueAmount}.
+	Based on the monthly rent of \SmallBox{\$\Rent}, the prorated rent amount is calculated by multiplying the daily rent by the number of days in the proration period. That means \SmallBox{\$\DailyRent} multiplied by \TinyBox{\the\PreLeaseDuration} days from \DateBox{\Commencement} to \DateBox{\LeaseStart}. The resulting prorated rent amount is \DateBox{\$\DueAmount}. 
+	
+	Following is the detailed breakdown of the proration calculation:
 
 	\[
 	\begin{aligned}
-	\text{Daily Rent} &= \frac{\Rent}{30} = \$\DailyRent \\
-	\text{Prorated Rent} &= \text{Daily Rent} \times \text{Number of Days in Proration Period} \\
-						&= \$\DailyRent \times \the\PreLeaseDuration = \$\DueAmount
+	\text{Daily Rent} 		&	= \frac{\Rent}{30} = \$\DailyRent \\
+	\text{Prorated Rent} 	&	= \$\DailyRent \times \num{\the\PreLeaseDuration} = \SmallBox{\$\DueAmount}	
 	\end{aligned}
 	\]
 
 	\section{PAYMENT TERMS.}
-	The Tenant agrees to pay the prorated rent amount of \DateBox{\$\DueAmount{}}. This prorated rent shall be due on or before \DateBox{\Commencement} and shall be paid in accordance with the payment terms outlined in the original lease agreement.
+	This prorated rent shall be due on or before \DateBox{\Commencement} and shall be paid in accordance with the payment terms outlined in the original lease agreement.
 
-	\input{./src/acknowledge.tex}
+	\input{acknowledge.tex}
 
 \end{document}

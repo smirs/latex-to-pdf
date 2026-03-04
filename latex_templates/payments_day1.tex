@@ -1,0 +1,69 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fp}  % floating point calculations
+\usepackage{pgfcalendar} % for date calculations
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+% New commands defined
+
+\include{newcommands.tex}
+\include{header_oproperties.tex}
+
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\Commencement}{{{COMMENCEMENT}}}  % lease commencement date
+\renewcommand{\LeaseStart}{{{LEASESTART}}}  % lease start date
+\renewcommand{\Rent}{{{RENT}}}  % monthly rent amount	
+\renewcommand{\SecurityDeposit}{{{SECURITYDEPOSIT}}}  % security deposit amount
+\renewcommand{\PetDeposit}{{{PETDEPOSIT}}}  % pet deposit amount
+\renewcommand{\NumPets}{{{NUMPETS}}}  % number of pets
+\renewcommand{\OtherFees}{{{OTHERFEES}}}  % other fees
+
+
+\setlength{\parindent}{0pt}  % remove all paragraph indentation
+
+\begin{document}
+
+	\ComputePreLeaseDays % Compute the number of days in the proration period and Due Amount
+
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Total Dues at Commencement Day}}}
+	\end{center}
+	\hfill\today
+
+	\vspace{0.5cm}
+	\tenantinfo{}{}
+
+	\section{STATEMENT.}
+	Your total payment amount due on \DateBox{\Commencement} is \SmallBox{\$\TotalPaymentDayOne} which the sum of the prorated rent for the period from \DateBox{\Commencement} to \DateBox{\LeaseStart}, the security deposit, and the first month’s rent. The breakdown is as follows:
+
+
+	\[
+	\begin{aligned}
+	\text{Total Amount Due on} 	&= \text{Prorated Amount} + \text{Security Deposit} + \text{First Month Rent} + \text{Pet Deposit} + \text{Other Fees}\\
+								&= \SmallBox{\text{\$\DueAmount}} + \SmallBox{\text{\$\SecurityDeposit}} + \SmallBox{1 X \text{\$\Rent}} + \SmallBox{\text{\NumPets} X \text{\$\PetDeposit}} + \SmallBox{\text{\$\OtherFees}}\\
+	\text{\bf{TOTAL}}			&= \RedlBox{\bf{\text{\$\TotalPaymentDayOne}}}
+	\end{aligned}
+	\]
+
+	The failure to pay the total amount due on the commencement date \DateBox{\Commencement} may result in the termination of the lease agreement and eviction from the property. Please ensure that the payment is made on time to avoid any inconvenience.
+
+
+	\input{acknowledge.tex}
+
+\end{document}

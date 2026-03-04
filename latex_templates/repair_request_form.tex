@@ -11,13 +11,23 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\usepackage{fp}  % floating point calculations
+\usepackage{pgfcalendar} % for date calculations
+\usepackage{amsmath}
+\usepackage{siunitx}
 
 
 
 
 % iNCLUDE HEADER AND NEW COMMANDS
-\include{./src/newcommands.tex}
-\include{./src/header_oproperties.tex}
+\include{newcommands.tex}
+\include{header_oproperties.tex}
+
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\TenantPhone}{{{TENANTPHONE}}}  % tenant phone number
+\renewcommand{\TenantEmail}{{{TENANTEMAIL}}}  % tenant email address
 
 
 \titleformat{\section}
@@ -40,9 +50,9 @@
 	\section{PROPERTY INFORMATION.}
 
 	\begin{tabular}{ll}
-	Tenant Name(s): & \BigBox{\TenantNames},\\
-	Property Address: &\BigBox{\PropertyAddress}, \hspace{0.35cm} Unit Number: \TinyBox{\UnitNum}\\
-	Phone Number: &\MidBox{\TenantPhone}, Email Address: \MidBigBox{\TenantEmail}\\
+	Tenant Name(s): & \BigBox{\TenantNames}\\
+	Property Address: &\BigBox{\PropertyAddress}\\
+	Phone Number: &\MidBox{\TenantPhone} \hfill Email Address: \MidBigBox{\TenantEmail}\\
 	\end{tabular}
 
 	\section{REPAIR DETAILS.}

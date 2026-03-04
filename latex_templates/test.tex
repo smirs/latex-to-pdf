@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{eforms}
+\usepackage{fp}
+\usepackage{pgfcalendar}
+
+% Variables
+\newcommand{\Rent}{1445.00}
+\newcommand{\Commencement}{2025-12-23}
+\newcommand{\LeaseStart}{2025-12-31}
+
+% Counters
+\newcount\CommencementCount
+\newcount\StartDateCount
+\newcount\PreLeaseDuration
+
+% Compute pre-lease days
+\newcommand{\ComputePreLeaseDays}{%
+  \pgfcalendardatetojulian{\Commencement}{\CommencementCount}%
+  \pgfcalendardatetojulian{\LeaseStart}{\StartDateCount}%
+  \PreLeaseDuration=\StartDateCount
+  \advance\PreLeaseDuration by -\CommencementCount
+}
+
+\ComputePreLeaseDays
+
+% Daily Rent
+\newcommand{\DailyRent}{\fpeval{round(\Rent/30,2)}}
+
+% Due Amount
+\newcommand{\DueAmount}{\fpeval{round(\Rent/30 * \PreLeaseDuration,2)}}
+
+\begin{document}
+
+Daily Rent: $\num{\DailyRent}$
+
+Pre-Lease Duration: \the\PreLeaseDuration\ days
+
+Prorated Rent: $\num{\DueAmount}$
+
+\end{document}
