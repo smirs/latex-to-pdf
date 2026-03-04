@@ -1,0 +1,104 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=0.75in, bottom=2.15in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+
+
+
+% iNCLUDE HEADER AND NEW COMMANDS
+\include{./src/newcommands.tex}
+\include{./src/header_oproperties.tex}
+
+
+\titleformat{\section}
+{\large\bfseries}
+{\thesection}{1em}{}
+
+
+\begin{document}
+
+	
+	% ---------------- DOCUMENT TITLE ----------------
+	\vspace{.1cm}
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Tenant Repair Request}}}
+	\end{center}
+	
+	\vspace{0.5cm}
+	
+	\section{PROPERTY INFORMATION.}
+
+	\begin{tabular}{ll}
+	Tenant Name(s): & \BigBox{\TenantNames},\\
+	Property Address: &\BigBox{\PropertyAddress}, \hspace{0.35cm} Unit Number: \TinyBox{\UnitNum}\\
+	Phone Number: &\MidBox{\TenantPhone}, Email Address: \MidBigBox{\TenantEmail}\\
+	\end{tabular}
+
+	\section{REPAIR DETAILS.}
+	Date Issue Was First Noticed: \MidBox{}, \\
+	Location of Issue (check one):\\
+
+	\begin{tabular}{lll}
+	\mycheckbox{$1^{st}$ Bathroom}{$1^{st}$ Bathroom} & \mycheckbox{$1^{st}$ Bedroom}{$1^{st}$ Bedroom} & \mycheckbox{Kitchen}{Kitchen}\\
+	\mycheckbox	{$2^{nd}$ Bathroom}{$2^{nd}$ Bathroom} & \mycheckbox{$2^{nd}$ Bedroom}{$2^{nd}$ Bedroom} & \mycheckbox{Living Area}{Living Area}\\
+	\mycheckbox{Utility Area}{Utility Area} & \mycheckbox{Balcony}{Balcony} & \mycheckbox{Exterior}{Exterior} \\
+	\end{tabular}
+
+
+	\section{DESCRIPTION OF THE PROBLEM:}
+	Please be as specific as possible:\\
+	\TextField[name=4, multiline=true,width=\linewidth,height=18\baselineskip,]{}
+
+	\section{ACCESS PERMISSION.}
+	
+	Do you authorize property management / workers to enter the unit to perform repairs if you are not present?
+	\mycheckbox{Yes}{Yes}  ,
+	\mycheckbox{No}{No}  — appointment required\\
+
+	\noindent Preferred repair time:\\
+	\mycheckbox{Morning}{Morning}  ,
+	\mycheckbox{Afternoon}{Afternoon} ,
+	\mycheckbox{Flexible}{Flexible} 
+
+
+	\section{URGENCY LEVEL.}
+	\mycheckbox{Routine}{Routine}  — can be scheduled\\
+	\mycheckbox{Urgent}{Urgent}  — affects daily living\\
+	\mycheckbox{Emergency}{Emergency}  — immediate safety risk (CALL 911 IMMEDIATELY)
+
+	\section{SAFETY \& RESPONSIBILITY CHECK.}
+	Please choose all that applies:\\
+	\mycheckbox{neglect}{The issue was not caused by tenant misuse or neglect}.\\
+	\mycheckbox{pets}{Pets will be secured during service}.\\
+	\mycheckbox{access}{Area will be accessible for repair}	.
+
+	\section{ACKNOWLEDGE \& SIGNATURE.}
+	\itemsign{fname}{signature}{date}
+	\vfill
+	\hrule
+	    \section{OFFICE USE ONLY.}
+
+	\begin{tabular}{ll}
+		Received Date: &\BigBox{datereceived}, \\
+		Assigned To: &\BigBox{assignee},\\
+		Scheduled Date: &\BigBox{scheduleddate},\\
+		Complete Date: &\BigBox{completedate},\\
+	\end{tabular}
+
+	\vspace{0.2cm}
+		Property Manager Notes: \\
+		\TextField[name=4, multiline=true,width=\linewidth,height=5\baselineskip,]{}
+
+
+	
+\end{document}

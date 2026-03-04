@@ -1,0 +1,75 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+
+% New commands defined
+\include{newcommands.tex}
+\include{header_oproperties.tex}
+
+% New commands defined
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+\renewcommand{\ManagerPhone}{{{MANAGERPHONE}}}  % manager's phone number
+\renewcommand{\ManagerEmail}{{{MANAGEREMAIL}}}  % manager's email address
+\renewcommand{\PenaltyFine}{{{PENALTYFINE}}}  % penalty fine amount for failure to report maintenance issues
+
+
+\begin{document}
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Maintenance Addendum}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	\tenantinfo{}{}
+
+
+\section{TENANT RESPONSIBILITIES.}	
+Tenants will be responsible \%100 for the following charges:\\
+\mycheckbox{check11}{If the Tenant fails to report necessary repairs}\\
+\mycheckbox{check12}{If the Tenant performs repairs without Lessor’s permission}\\
+\mycheckbox{check13}{When tenant causes sewer stoppages/blockages}\\
+\mycheckbox{check14}{If the tenant fails to meet a vendor at an assigned appointment and there is a vendor charge}\\
+\mycheckbox{check15}{If the Tenant or Tenant’s Guests or Invitees cause damage to the property}\\
+\mycheckbox{check16}{If the Tenant reports a repair which does not require service}\\
+\mycheckbox{check17}{If the Tenant fails to replace battery for smoke detector and causes a service call for that}\\
+\mycheckbox{check18}{For replacing doors, broken glass and/or windows unless the Tenant provides a Police Report detailing the cause
+of the problem showing forced entry by others.}\\
+\mycheckbox{check19}{For damage to walls, carpets, floors, etc, because the Tenant left the windows or doors open during rain or wind.}\\
+
+\section{REPORTS.}
+Please call/text, or email Property Manager at \GoodBox{\ManagerPhone} or \MidBigBox{\ManagerEmail} to report maintenance issues. It is the responsibility of all tenants (Lessees) to report all repairs/maintenance problems to the Property Manager. Tenants can incur financial damages if they fail to report maintenance problems.\\
+
+
+Report the following:\\
+\mycheckbox{check1}{Any sign of mold in the property immediately} \\
+\mycheckbox{check2}{All toilet and faucet leaks and any plumbing backups}\\
+\mycheckbox{check3}{Electrical problems}\\
+\mycheckbox{check4}{Heating and air-conditioning problems}\\
+\mycheckbox{check5}{Inoperative smoke detectors}\\
+\mycheckbox{check6}{Faulty appliances supplied in property}\\
+\mycheckbox{check7}{Roof leaks}\\
+\mycheckbox{check8}{Broken windows and doors}\\
+\mycheckbox{check9}{Any other necessary repairs or unsafe condition}\\
+\mycheckbox{check10}{Major pest control items such as bees, cockroaches, rats, termites or other major infestations}\\
+
+
+\newpage
+\section{PENALTY FINE.}
+Failure to report maintenance issues in a timely manner will result in a \CuteBox{\$\PenaltyFine} fine for each unreported issue, which will be added to the next rent payment. Additionally, if the Tenant fails to report necessary repairs and it results in further damage to the property, the Tenant will be responsible for the cost of repairs and any associated damages.\\
+
+	\input{acknowledge.tex}
+
+\end{document}

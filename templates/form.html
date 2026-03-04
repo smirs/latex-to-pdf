@@ -280,6 +280,38 @@ h1, h2, h3, h4, h5 {
         </div>
         
 
+      <div class="card" style="width: 20rem;">
+        <img src="/assets/img/maintenance.png" class="card-img-top" alt="rental maintenance addundum template">
+
+        <div class="card-body">
+          <h5 class="card-title">Maintenance Addendum</h5>
+          <p class="card-text"> Clarify maintenance responsibilities and procedures with a professional addendum. Protect your property and set clear expectations for tenants.
+          </p>
+
+        <div class="d-flex flex-column flex-md-row gap-2">
+          <button 
+            class="btn btn-primary w-100 w-md-50"
+            data-bs-toggle="modal"
+            data-bs-target="#maintenanceModal"
+            data-template="Maintenance_addendum"
+            data-title="Maintenance Addendum">
+
+            Generate PDF
+          </button>
+
+          <button 
+            class="btn btn-outline-secondary w-100 w-md-50">
+            <a 
+                href="https://opropertiestl.com/assets/templates/previews/preview_template_lease.pdf"
+                target="_blank">                Preview
+            </a>
+          </button>
+        </div>
+        </div>
+        </div>
+
+
+
       </div>
 </div>
 </section>
@@ -750,6 +782,75 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   </div>
 </div>
 {# MOVEIN ENDS #}
+
+{# MAINTENANCE STARTS #}
+<div class="modal fade" id="maintenanceModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+
+      <div class="modal-header">
+          <h5 class="modal-title">Maintenance Information</h5>
+          <button 
+              type="button" 
+              class="btn-close position-absolute top-0 end-0 m-3" 
+              data-bs-dismiss="modal"
+              aria-label="Close">
+          </button>
+      </div>
+
+      <form method="POST" action="/generate-maintenance">
+        <div class="modal-body">
+
+          <!-- Hidden field to store which template -->
+          <input type="hidden" name="template_type" id="templateType">
+
+          <div class="row">
+
+
+            <div class="mb-3">
+              <label>Tenant Name(s)</label>
+              <input type="text" class="form-control" name="tenantname" required>
+            </div>
+
+            <div class="mb-3">
+              <label>Property Address</label>
+              <input type="text" class="form-control" name="propertyaddress" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Penalty Fine ($)</label>
+              <input type="number" class="form-control" name="penaltyfine" required>
+            </div>  
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Property-Manager Phone</label>
+              <input type="tel" class="form-control" name="managerphone" required>
+            </div> 
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Property-Manager Email</label>
+              <input type="email" class="form-control" name="manageremail" required>
+            </div> 
+          </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">
+            Generate PDF
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{# MAINTENANCE ENDS #}
 
 
 {# PETS STARTS #}

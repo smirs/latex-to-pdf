@@ -1,0 +1,58 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fp}  % floating point calculations
+\usepackage{pgfcalendar} % for date calculations
+% New commands defined
+
+\include{./src/newcommands.tex}
+\include{./src/header_notices.tex}
+
+\setlength{\parindent}{0pt}  % remove all paragraph indentation
+
+\begin{document}
+
+	\ComputePreLeaseDays % Compute the number of days in the proration period and Due Amount
+	% ---------------- DOCUMENT TITLE ----------------
+
+    Date: \today
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{blue}{\textbf{LEASE NOTICE}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	\noticeinfo{}{}
+
+	\section{PURPOSE.}
+    This is a scheduled seasonal maintenance notice to remind you about the the most important seasonal maintenance items. Please review the details below and take appropriate action as needed.
+    Failure to address the maintenance issues may result in further action, including potential fines or legal consequences as outlined in the lease agreement.
+
+    \section{DETAILS.}
+    
+    \mycheckbox{issue1}{Air filter needs to be replaced every 3 months.}
+
+    \mycheckbox{issue2}{Smoke detector batteries needs to be replaced every 6 months.}
+
+    \mycheckbox{issue3}{The under the sink areas needs to be checked for leaks and mold every 6 months.}
+
+    \mycheckbox{issue4}{Main bathroom toilet needs repair}
+
+
+    \section{RESPONSE.}
+    Please report the maintenance issue to the property manager within 5 days of receiving this notice. Failure to report the issue may result in a fine of \PenaltyFine~per day until the issue is reported. You can report the issue by contacting the property manager at \ManagerPhone~or \ManagerEmail.
+
+
+	\input{./src/propmanager_signature.tex}
+
+\end{document}

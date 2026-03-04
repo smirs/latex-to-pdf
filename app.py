@@ -5,6 +5,7 @@ from components.movein_generator import generate_movein_pdf
 from components.notice_generator import generate_notice_pdf
 from components.keys_generator import generate_keys_pdf
 from components.pets_generator import generate_pets_pdf
+from components.maintenanance_generator import generate_maintenance_pdf
 
 import os
 
@@ -14,6 +15,13 @@ os.makedirs("output", exist_ok=True)
 @app.route("/")
 def index():
     return render_template("form.html")
+
+@app.route("/generate-maintenance", methods=["POST"])
+def maintenance():
+    success, result = generate_maintenance_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
 @app.route("/generate-pets", methods=["POST"])
 def pets():

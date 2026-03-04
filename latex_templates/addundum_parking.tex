@@ -1,0 +1,50 @@
+\documentclass[9pt]{article}
+\setcounter{secnumdepth}{3}
+
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+
+% New commands defined
+
+\include{./src/newcommands.tex}
+\include{./src/header_oproperties.tex}
+
+\begin{document}
+	% ---------------- DOCUMENT TITLE ----------------
+
+	\begin{center}
+		\centering \fbox{\huge \textcolor{red}{\textbf{Parking Addendum}}}
+	\end{center}
+
+	\vspace{0.5cm}
+	\tenantinfo{}{}
+
+	\section{Carport Usage.}
+	The Tenant acknowledges and agrees to the exclusive use of the designated carport space (the
+	"Carport") located at the rental property premises. The Tenant shall use the Carport solely for parking
+	a single personal vehicle that is in compliance with local regulations and property guidelines. The
+	Tenant shall not use the Carport for any other purpose, including storage of personal items,
+	equipment, or any activity that obstructs or interferes with proper vehicle parking.
+
+	\section{Duration and Termination.}
+	This Addendum shall be effective for the same duration as the original lease agreement. If the original
+	lease agreement is extended or renewed, this Addendum shall automatically extend or renew
+	alongside it. If the Tenant chooses to terminate the Carport usage, a written notice must be provided
+	to the Landlord at least 60 days prior to the intended termination date.
+
+	\section{Maintenance and Responsibilities.}
+	The Tenant is responsible for maintaining cleanliness and order within the Carport space. The Tenant
+	shall not cause any damage to the Carport or any surrounding property. Any damage or modifications to the carport caused by the Tenant's actions will be subject to repair or restoration at the Tenant's Expense.
+
+	\input{./src/acknowledge.tex}
+
+\end{document}
