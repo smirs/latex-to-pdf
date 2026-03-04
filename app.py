@@ -6,6 +6,8 @@ from components.notice_generator import generate_notice_pdf
 from components.keys_generator import generate_keys_pdf
 from components.pets_generator import generate_pets_pdf
 from components.maintenanance_generator import generate_maintenance_pdf
+from components.parking_generator import generate_parking_pdf
+from components.utilities_generator import generate_utilities_pdf
 
 import os
 
@@ -15,6 +17,20 @@ os.makedirs("output", exist_ok=True)
 @app.route("/")
 def index():
     return render_template("form.html")
+
+@app.route("/generate-utilities", methods=["POST"])
+def utilities():
+    success, result = generate_utilities_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
+
+@app.route("/generate-parking", methods=["POST"])
+def parking():
+    success, result = generate_parking_pdf(request.form)
+    if not success:
+        return f"<h3>Error:</h3><pre>{result}</pre>"
+    return send_file(result, as_attachment=True)
 
 @app.route("/generate-maintenance", methods=["POST"])
 def maintenance():

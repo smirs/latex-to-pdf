@@ -12,11 +12,16 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{fp}  % floating point calculations
+\usepackage{siunitx}
+
 
 % New commands defined
+\include{newcommands.tex}
+\include{header_oproperties.tex}
 
-\include{./src/newcommands.tex}
-\include{./src/header_oproperties.tex}
+\renewcommand{\TenantNames}{{{TENANTNAME}}}  % tenant's full name
+\renewcommand{\PropertyAddress}{{{PROPERTYADDRESS}}}  % property address
+
 
 \setlength{\parindent}{0pt}  % remove all paragraph indentation
 
@@ -37,6 +42,6 @@
 	
 	Lessee(s) acknowledge(s) that all utilities will be used for normal household purposes only and shall not be disconnected at any time during the Term of this Lease Contract. The Landlord is not responsible for any discomfort, inconvenience or damage of any kind caused by the interruption or failure of any services.
 
-	\input{./src/acknowledge.tex}
+	\input{acknowledge.tex}
 
 \end{document}
